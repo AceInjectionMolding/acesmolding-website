@@ -1738,7 +1738,7 @@ h4 { font-size: 1.1rem; }
 }
 
 .hero-logo-primary {
-    max-width: 520px;
+    max-width: 780px;
     width: 100%;
     height: auto;
     filter: drop-shadow(0 0 40px rgba(232, 96, 28, 0.4)) drop-shadow(0 4px 20px rgba(0,0,0,0.8));
@@ -1761,6 +1761,6 @@ h4 { font-size: 1.1rem; }
 }
 
 @media (max-width: 768px) {
-    .hero-logo-primary { max-width: 320px; }
+    .hero-logo-primary { max-width: 90vw; }
     .hero-tagline { font-size: 1.1rem; letter-spacing: 0.08em; }
 }
