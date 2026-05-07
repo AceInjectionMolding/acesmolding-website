@@ -1,5 +1,2 @@
-videos/*.mp4
-videos/*.mov
-videos/*.zip
-videos/*.webm
-videos/*.ogv
+# Allow all videos
+*.DS_Store
