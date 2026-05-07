@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" width="520" height="220">
+  <defs>
+    <style>
+      .aim-letters {
+        font-family: 'Arial Black', 'Impact', sans-serif;
+        font-size: 148px;
+        font-weight: 900;
+        font-style: italic;
+        fill: #F5C800;
+        stroke: #1a1a1a;
+        stroke-width: 5px;
+        filter: url(#shadow);
+      }
+      .aim-subtitle {
+        font-family: 'Arial', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        fill: #1a1a1a;
+        letter-spacing: 3px;
+      }
+      .aim-subtitle-white {
+        font-family: 'Arial', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        fill: #ffffff;
+        letter-spacing: 3px;
+      }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- A.I.M. Letters -->
+  <text x="10" y="155" class="aim-letters">A.I.M.</text>
+
+  <!-- Crosshair target overlapping M -->
+  <!-- Outer ring -->
+  <circle cx="435" cy="115" r="72" fill="none" stroke="#1a1a1a" stroke-width="10"/>
+  <!-- Inner ring -->
+  <circle cx="435" cy="115" r="45" fill="none" stroke="#1a1a1a" stroke-width="8"/>
+  <!-- White gap rings -->
+  <circle cx="435" cy="115" r="68" fill="none" stroke="rgba(255,255,255,0.0)" stroke-width="0"/>
+  <!-- Crosshair lines -->
+  <line x1="435" y1="30" x2="435" y2="200" stroke="#1a1a1a" stroke-width="5"/>
+  <line x1="350" y1="115" x2="520" y2="115" stroke="#1a1a1a" stroke-width="5"/>
+  <!-- White crosshair overlay for contrast -->
+  <line x1="435" y1="30" x2="435" y2="200" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="350" y1="115" x2="520" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+  <!-- Subtitle -->
+  <text x="10" y="195" class="aim-subtitle-white">ACE'S INJECTION MOLDING</text>
+</svg>
