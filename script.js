@@ -181,11 +181,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            if (status) {
-                status.className = 'form-status success';
-                status.textContent = 'Thank you! We\'ll be in touch shortly.';
-            }
-            contactForm.reset();
+            // Submit to Netlify
+            const formData = new FormData(contactForm);
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                if (status) {
+                    status.className = 'form-status success';
+                    status.textContent = 'Thank you! We\'ll be in touch within one business day.';
+                }
+                contactForm.reset();
+            })
+            .catch(() => {
+                if (status) {
+                    status.className = 'form-status error';
+                    status.textContent = 'Something went wrong. Please email us directly at paul@acesmolding.com';
+                }
+            });
         });
     }
 
