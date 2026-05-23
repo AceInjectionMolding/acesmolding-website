@@ -51,6 +51,38 @@
       ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+            {
+                  "@type": "Question",
+                  "name": "How do you go from a prototype to production injection molding?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The typical path starts with 3D printed prototypes for form and fit validation, then moves to bridge tooling (3D printed or aluminum molds) for functional testing in production materials, and finally to production steel tooling for full-volume manufacturing. Each stage validates the design before committing to the next level of tooling investment."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What is bridge tooling in injection molding?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bridge tooling refers to interim molds \u2014 typically 3D printed or soft aluminum \u2014 used to produce real injection-molded parts while production tooling is being built. Bridge molds let you start selling product, run field tests, or fulfill initial orders without waiting the full 6\u20138 weeks for hardened steel production molds."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Can you use the same design for prototyping and production?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "In most cases, yes \u2014 with minor refinements. A good DFM review during the prototyping phase identifies any changes needed for injection molding (draft angles, wall thickness uniformity, gate locations). Starting with a moldable design philosophy from day one minimizes redesign when transitioning from prototype to production."
+                  }
+            }
+      ]
+}
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -183,6 +215,23 @@
             </div>
 
         </div>
+
+        <!-- FAQ Section -->
+        <section class="blog-faq" style="margin-top:48px;padding-top:32px;border-top:2px solid var(--gray-200);">
+            <h2 style="font-size:1.5rem;margin-bottom:24px;">Frequently Asked Questions</h2>
+            <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:16px;background:var(--gray-50);">
+                <summary style="font-weight:600;cursor:pointer;list-style:none;">How do you go from a prototype to production injection molding?</summary>
+                <p style="margin-top:10px;color:var(--text-light);line-height:1.7;">The typical path starts with 3D printed prototypes for form and fit validation, then moves to bridge tooling (3D printed or aluminum molds) for functional testing in production materials, and finally to production steel tooling for full-volume manufacturing. Each stage validates the design before committing to the next level of tooling investment.</p>
+            </details>
+            <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:16px;background:var(--gray-50);">
+                <summary style="font-weight:600;cursor:pointer;list-style:none;">What is bridge tooling in injection molding?</summary>
+                <p style="margin-top:10px;color:var(--text-light);line-height:1.7;">Bridge tooling refers to interim molds — typically 3D printed or soft aluminum — used to produce real injection-molded parts while production tooling is being built. Bridge molds let you start selling product, run field tests, or fulfill initial orders without waiting the full 6–8 weeks for hardened steel production molds.</p>
+            </details>
+            <details class="faq-item" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:16px;background:var(--gray-50);">
+                <summary style="font-weight:600;cursor:pointer;list-style:none;">Can you use the same design for prototyping and production?</summary>
+                <p style="margin-top:10px;color:var(--text-light);line-height:1.7;">In most cases, yes — with minor refinements. A good DFM review during the prototyping phase identifies any changes needed for injection molding (draft angles, wall thickness uniformity, gate locations). Starting with a moldable design philosophy from day one minimizes redesign when transitioning from prototype to production.</p>
+            </details>
+        </section>
     </article>
 
     <!-- More Articles -->
