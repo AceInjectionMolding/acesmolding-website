@@ -112,7 +112,7 @@
             <a href="index.html" class="logo">
                 <img src="logo-clean.png" alt="Ace's Injection Molding Inc. logo — plastic injection molding Long Island NY" title="Ace's Injection Molding Inc." style="height:55px;width:auto;">
             </a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
@@ -121,7 +121,7 @@
                 <li><a href="industries.html">Industries</a></li>
                 <li><a href="blog/index.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html" class="btn btn-nav">Request a Quote</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-nav">Request a Quote</a></li>
             </ul>
         </div>
     </nav>
@@ -143,10 +143,10 @@
             <p class="video-hero__sub animate-on-load delay-2">Prototype to Production Under One Roof &mdash; Plastic Injection Molding &bull; Mold Making &bull; Rapid Prototyping &bull; 3D Printing &bull; Laser Engraving &bull; Bohemia, NY</p>
             <div class="video-hero__actions animate-on-load delay-3">
                 <a href="contact.html" class="btn btn-primary btn-lg btn-glow">
-                    Request a Quote <i class="fas fa-arrow-right"></i>
+                    Request a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
                 <a href="services.html" class="btn btn-ghost btn-lg">
-                    Explore Capabilities <i class="fas fa-chevron-right"></i>
+                    Explore Capabilities <i class="fas fa-chevron-right" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -160,6 +160,13 @@
             <button class="vid-dot" data-video="videos/welding-sparks.mp4" aria-label="Welding video"></button>
             <button class="vid-dot" data-video="videos/metal-cutting.mp4" aria-label="Metal cutting video"></button>
         </div>
+        <!-- Capability ticker -->
+        <div class="hero-ticker" aria-hidden="true">
+            <div class="hero-ticker__track">
+                <span>Injection Molding</span><span>Mold Making</span><span>Rapid Prototyping</span><span>3D Printing</span><span>Large Format 3D</span><span>High-Temp Resin</span><span>3D Printed Molds</span><span>CO2 Laser Engraving</span><span>Fiber Laser Marking</span><span>Bohemia, Long Island NY</span>
+                <span>Injection Molding</span><span>Mold Making</span><span>Rapid Prototyping</span><span>3D Printing</span><span>Large Format 3D</span><span>High-Temp Resin</span><span>3D Printed Molds</span><span>CO2 Laser Engraving</span><span>Fiber Laser Marking</span><span>Bohemia, Long Island NY</span>
+            </div>
+        </div>
     </header>
 
     <!-- CAPABILITIES SHOWCASE -->
@@ -171,68 +178,68 @@
                 <p class="animate-in">Nine integrated services. One facility. Zero compromises.</p>
             </div>
             <div class="capabilities-grid">
-                <a href="services.html#injection-molding" class="cap-card animate-in" data-accent="orange">
+                <a href="services.html#injection-molding" class="cap-card animate-in">
                     <div class="cap-card__number">01</div>
-                    <div class="cap-card__icon"><i class="fas fa-cogs"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
                     <h3>Plastic Injection Molding</h3>
                     <p>High-quality thermoplastic parts from prototype to production volumes.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="mold-making.html" class="cap-card animate-in" data-accent="blue">
+                <a href="mold-making.html" class="cap-card animate-in">
                     <div class="cap-card__number">02</div>
-                    <div class="cap-card__icon"><i class="fas fa-cube"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-cube" aria-hidden="true"></i></div>
                     <h3>Mold Making</h3>
                     <p>Custom tooling designed and built in-house for precision and speed.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#rapid-prototyping" class="cap-card animate-in" data-accent="green">
+                <a href="services.html#rapid-prototyping" class="cap-card animate-in">
                     <div class="cap-card__number">03</div>
-                    <div class="cap-card__icon"><i class="fas fa-bolt"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
                     <h3>Rapid Prototyping</h3>
                     <p>Iterate fast with functional prototypes in production-grade materials.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#3d-printing" class="cap-card animate-in" data-accent="purple">
+                <a href="services.html#3d-printing" class="cap-card animate-in">
                     <div class="cap-card__number">04</div>
-                    <div class="cap-card__icon"><i class="fas fa-print"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-print" aria-hidden="true"></i></div>
                     <h3>3D Printing</h3>
                     <p>FDM and resin printing for concept models and functional parts.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#large-format-3d" class="cap-card animate-in" data-accent="teal">
+                <a href="services.html#large-format-3d" class="cap-card animate-in">
                     <div class="cap-card__number">05</div>
-                    <div class="cap-card__icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i></div>
                     <h3>Large Format 3D Printing</h3>
                     <p>Oversized parts and fixtures printed without assembly or tooling.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#high-temp-resin" class="cap-card animate-in" data-accent="red">
+                <a href="services.html#high-temp-resin" class="cap-card animate-in">
                     <div class="cap-card__number">06</div>
-                    <div class="cap-card__icon"><i class="fas fa-fire"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-fire" aria-hidden="true"></i></div>
                     <h3>High-Temp Resin Printing</h3>
                     <p>Engineered resins for demanding thermal and mechanical environments.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#3d-printed-molds" class="cap-card animate-in" data-accent="amber">
+                <a href="services.html#3d-printed-molds" class="cap-card animate-in">
                     <div class="cap-card__number">07</div>
-                    <div class="cap-card__icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
                     <h3>3D Printed Molds</h3>
                     <p>Bridge tooling and low-volume molds — production-ready in days.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#co2-laser" class="cap-card animate-in" data-accent="cyan">
+                <a href="services.html#co2-laser" class="cap-card animate-in">
                     <div class="cap-card__number">08</div>
-                    <div class="cap-card__icon"><i class="fas fa-crosshairs"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-crosshairs" aria-hidden="true"></i></div>
                     <h3>CO2 Laser Engraving</h3>
                     <p>Precision engraving on plastics, wood, glass, and organic materials.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="services.html#fiber-laser" class="cap-card animate-in" data-accent="indigo">
+                <a href="services.html#fiber-laser" class="cap-card animate-in">
                     <div class="cap-card__number">09</div>
-                    <div class="cap-card__icon"><i class="fas fa-barcode"></i></div>
+                    <div class="cap-card__icon"><i class="fas fa-barcode" aria-hidden="true"></i></div>
                     <h3>Fiber Laser Engraving</h3>
                     <p>Permanent marking on metals for traceability and branding.</p>
-                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right"></i></span>
+                    <span class="cap-card__link">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
             </div>
         </div>
@@ -248,8 +255,7 @@
         </div>
         <div class="container stats-cinematic__content">
             <div class="stat-block animate-in">
-                <span class="stat-block__number" data-count="30">0</span>
-                <span class="stat-block__plus">+</span>
+                <span class="stat-block__number" data-count="30">0</span><span class="stat-block__plus">+</span>
                 <span class="stat-block__label">Years of<br>Experience</span>
             </div>
             <div class="stat-block animate-in">
@@ -261,8 +267,7 @@
                 <span class="stat-block__label">Industries<br>Served</span>
             </div>
             <div class="stat-block animate-in">
-                <span class="stat-block__number">100</span>
-                <span class="stat-block__plus">%</span>
+                <span class="stat-block__number">100</span><span class="stat-block__plus">%</span>
                 <span class="stat-block__label">In-House<br>Capability</span>
             </div>
         </div>
@@ -278,48 +283,48 @@
             </div>
         </div>
         <div class="industries-scroller">
-            <div class="industry-tile animate-in" data-theme="aerospace">
-                <div class="industry-tile__icon"><i class="fas fa-plane"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-plane" aria-hidden="true"></i></div>
                 <h3>Aerospace</h3>
                 <p>Flight-critical precision components</p>
             </div>
-            <div class="industry-tile animate-in" data-theme="defense">
-                <div class="industry-tile__icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
                 <h3>Defense</h3>
                 <p>Military-spec manufacturing</p>
             </div>
-            <div class="industry-tile animate-in" data-theme="aviation">
-                <div class="industry-tile__icon"><i class="fas fa-helicopter"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-helicopter" aria-hidden="true"></i></div>
                 <h3>Aviation</h3>
-                <p>FAA-compliant parts & assemblies</p>
+                <p>FAA-compliant parts &amp; assemblies</p>
             </div>
-            <div class="industry-tile animate-in" data-theme="automotive">
-                <div class="industry-tile__icon"><i class="fas fa-car"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-car" aria-hidden="true"></i></div>
                 <h3>Automotive</h3>
-                <p>High-performance & production parts</p>
+                <p>High-performance &amp; production parts</p>
             </div>
-            <div class="industry-tile animate-in" data-theme="medical">
-                <div class="industry-tile__icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
                 <h3>Medical</h3>
-                <p>Biocompatible & precision devices</p>
+                <p>Biocompatible &amp; precision devices</p>
             </div>
-            <div class="industry-tile animate-in" data-theme="consumer">
-                <div class="industry-tile__icon"><i class="fas fa-shopping-bag"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-shopping-bag" aria-hidden="true"></i></div>
                 <h3>Consumer</h3>
                 <p>Product development to market</p>
             </div>
-            <div class="industry-tile animate-in" data-theme="electronics">
-                <div class="industry-tile__icon"><i class="fas fa-microchip"></i></div>
+            <div class="industry-tile animate-in">
+                <div class="industry-tile__icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
                 <h3>Electronics</h3>
-                <p>Enclosures, connectors & housings</p>
+                <p>Enclosures, connectors &amp; housings</p>
             </div>
         </div>
-        <div class="container center-cta" style="margin-top: 48px;">
-            <a href="industries.html" class="btn btn-outline animate-in">See Industry Details <i class="fas fa-arrow-right"></i></a>
+        <div class="container center-cta" style="margin-top:48px;">
+            <a href="industries.html" class="btn btn-outline animate-in">See Industry Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </div>
     </section>
 
-    <!-- WHY AIM — SPLIT VIDEO SECTION -->
+    <!-- WHY AIM — SPLIT SECTION -->
     <section class="section why-cinematic">
         <div class="why-cinematic__layout">
             <div class="why-cinematic__video-side">
@@ -333,42 +338,42 @@
                     <p class="why-cinematic__intro animate-in">Most manufacturers farm out half the job. We don't. Every service — from mold design to laser marking — happens under our roof.</p>
                     <div class="why-features">
                         <div class="why-feature animate-in">
-                            <div class="why-feature__icon"><i class="fas fa-building"></i></div>
+                            <div class="why-feature__icon"><i class="fas fa-building" aria-hidden="true"></i></div>
                             <div>
                                 <h3 class="why-feature__title">Everything In-House</h3>
                                 <p>No outsourcing, no delays, no finger-pointing.</p>
                             </div>
                         </div>
                         <div class="why-feature animate-in">
-                            <div class="why-feature__icon"><i class="fas fa-clock"></i></div>
+                            <div class="why-feature__icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
                             <div>
                                 <h3 class="why-feature__title">Fast Turnaround</h3>
                                 <p>Direct communication. No bureaucracy layers.</p>
                             </div>
                         </div>
                         <div class="why-feature animate-in">
-                            <div class="why-feature__icon"><i class="fas fa-route"></i></div>
+                            <div class="why-feature__icon"><i class="fas fa-route" aria-hidden="true"></i></div>
                             <div>
                                 <h3 class="why-feature__title">Prototype to Production</h3>
                                 <p>3D print → bridge tooling → injection molding. All with us.</p>
                             </div>
                         </div>
                         <div class="why-feature animate-in">
-                            <div class="why-feature__icon"><i class="fas fa-tasks"></i></div>
+                            <div class="why-feature__icon"><i class="fas fa-tasks" aria-hidden="true"></i></div>
                             <div>
                                 <h3 class="why-feature__title">Small Runs Welcome</h3>
                                 <p>We thrive on the runs big shops won't touch.</p>
                             </div>
                         </div>
                         <div class="why-feature animate-in">
-                            <div class="why-feature__icon"><i class="fas fa-certificate"></i></div>
+                            <div class="why-feature__icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
                             <div>
                                 <h3 class="why-feature__title">Full Traceability</h3>
                                 <p>Laser marking for serialization and compliance.</p>
                             </div>
                         </div>
                         <div class="why-feature animate-in">
-                            <div class="why-feature__icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <div class="why-feature__icon"><i class="fas fa-puzzle-piece" aria-hidden="true"></i></div>
                             <div>
                                 <h3 class="why-feature__title">No Job Too Complex</h3>
                                 <p>Multi-material, tight tolerances, exotic resins.</p>
@@ -381,62 +386,62 @@
     </section>
 
     <!-- FROM THE BLOG -->
-    <section class="section" style="background: var(--gray-100);">
+    <section class="section section--light">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag animate-in">From the Blog</span>
                 <h2 class="animate-in">Manufacturing <span class="highlight">Insights</span></h2>
                 <p class="animate-in">Expert guidance on injection molding, mold making, and getting your parts from concept to production.</p>
             </div>
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-                <a href="blog/plastic-injection-molding-cost-guide.html" class="blog-card animate-in" style="text-decoration:none;">
+            <div class="blog-grid">
+                <a href="blog/plastic-injection-molding-cost-guide.html" class="blog-card animate-in">
                     <div class="blog-card__meta"><span class="blog-card__tag">Cost &amp; Pricing</span></div>
                     <h3 class="blog-card__title">Injection Molding Cost Guide for Small Businesses</h3>
                     <p class="blog-card__excerpt">Understand tooling costs, per-part pricing, and strategies to get the best value from your injection molding budget.</p>
-                    <span class="blog-card__link">Read Article <i class="fas fa-arrow-right"></i></span>
+                    <span class="blog-card__link">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="blog/how-injection-molds-are-made.html" class="blog-card animate-in" style="text-decoration:none;">
+                <a href="blog/how-injection-molds-are-made.html" class="blog-card animate-in">
                     <div class="blog-card__meta"><span class="blog-card__tag">Mold Making</span></div>
                     <h3 class="blog-card__title">How Injection Molds Are Made: A Step-by-Step Guide</h3>
                     <p class="blog-card__excerpt">From CAD design through CNC machining and first article — see how precision molds are built at our Long Island facility.</p>
-                    <span class="blog-card__link">Read Article <i class="fas fa-arrow-right"></i></span>
+                    <span class="blog-card__link">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
-                <a href="blog/injection-molding-lead-times-explained.html" class="blog-card animate-in" style="text-decoration:none;">
+                <a href="blog/injection-molding-lead-times-explained.html" class="blog-card animate-in">
                     <div class="blog-card__meta"><span class="blog-card__tag">Lead Times</span></div>
                     <h3 class="blog-card__title">How Long Does Injection Molding Take? Lead Times Explained</h3>
                     <p class="blog-card__excerpt">A detailed breakdown of injection molding timelines — from mold design through production — with realistic numbers.</p>
-                    <span class="blog-card__link">Read Article <i class="fas fa-arrow-right"></i></span>
+                    <span class="blog-card__link">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                 </a>
             </div>
-            <div class="center-cta" style="margin-top: 32px; text-align:center;">
-                <a href="blog/index.html" class="btn btn-outline animate-in">View All Articles <i class="fas fa-arrow-right"></i></a>
+            <div class="center-cta" style="margin-top:40px;">
+                <a href="blog/index.html" class="btn btn-outline animate-in">View All Articles <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="section" id="faq" style="background: #fff;">
+    <section class="section" id="faq">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag animate-in">Quick Answers</span>
                 <h2 class="animate-in">Frequently Asked <span class="highlight">Questions</span></h2>
             </div>
-            <div class="faq-list" style="max-width:800px;margin:0 auto;">
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:var(--gray-50);">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">What services does Ace's Injection Molding offer? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">We offer nine integrated manufacturing services under one roof: plastic injection molding, mold making, rapid prototyping, 3D printing (standard, large format, and high-temp resin), 3D printed injection molds, CO2 laser engraving, and fiber laser marking. Everything from prototype to production happens in our Bohemia, NY facility.</p>
+            <div class="faq-list">
+                <details class="faq-item animate-in">
+                    <summary>What services does Ace's Injection Molding offer?</summary>
+                    <p>We offer nine integrated manufacturing services under one roof: plastic injection molding, mold making, rapid prototyping, 3D printing (standard, large format, and high-temp resin), 3D printed injection molds, CO2 laser engraving, and fiber laser marking. Everything from prototype to production happens in our Bohemia, NY facility.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:var(--gray-50);">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Do you handle small production runs? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">Yes. We specialize in small to medium production runs that larger shops often turn away. With no minimum order requirements, we regularly produce batches of 100 to 10,000+ parts. Our in-house tooling and flexible scheduling make small runs cost-effective.</p>
+                <details class="faq-item animate-in">
+                    <summary>Do you handle small production runs?</summary>
+                    <p>Yes. We specialize in small to medium production runs that larger shops often turn away. With no minimum order requirements, we regularly produce batches of 100 to 10,000+ parts. Our in-house tooling and flexible scheduling make small runs cost-effective.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:var(--gray-50);">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">How do I get a quote from Ace's Injection Molding? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">Send us your CAD files, drawings, or even a rough sketch through our contact form or email us at paul@acesmolding.com. We typically respond with a detailed quote including tooling options, per-part pricing, and lead times within 48 hours. You can also call us directly at (631) 891-9855.</p>
+                <details class="faq-item animate-in">
+                    <summary>How do I get a quote from Ace's Injection Molding?</summary>
+                    <p>Send us your CAD files, drawings, or even a rough sketch through our contact form or email us at paul@acesmolding.com. We typically respond with a detailed quote including tooling options, per-part pricing, and lead times within 48 hours. You can also call us directly at (631) 891-9855.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:var(--gray-50);">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Where is Ace's Injection Molding located? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">We're located in Bohemia, Long Island, New York (ZIP 11716). We serve customers across Long Island, the greater New York metro area, New Jersey, Connecticut, and ship nationwide.</p>
+                <details class="faq-item animate-in">
+                    <summary>Where is Ace's Injection Molding located?</summary>
+                    <p>We're located in Bohemia, Long Island, New York (ZIP 11716). We serve customers across Long Island, the greater New York metro area, New Jersey, Connecticut, and ship nationwide.</p>
                 </details>
             </div>
         </div>
@@ -454,8 +459,8 @@
             <h2 class="animate-in">Ready to Start Your<br><span class="highlight">Next Project?</span></h2>
             <p class="animate-in">Whether you need a single prototype or thousands of production parts, we'll get it done — fast, precise, and under one roof.</p>
             <div class="cta-cinematic__actions animate-in">
-                <a href="contact.html" class="btn btn-primary btn-lg btn-glow">Request a Quote <i class="fas fa-arrow-right"></i></a>
-                <a href="tel:6318919855" class="btn btn-ghost btn-lg"><i class="fas fa-phone"></i> (631) 891-9855</a>
+                <a href="contact.html" class="btn btn-primary btn-lg btn-glow">Request a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="tel:6318919855" class="btn btn-ghost btn-lg"><i class="fas fa-phone" aria-hidden="true"></i> (631) 891-9855</a>
             </div>
         </div>
     </section>
@@ -466,7 +471,6 @@
             <div class="footer-brand">
                 <a href="index.html" class="logo">
                     <img src="logo-clean.png" alt="Ace's Injection Molding Inc. logo — plastic injection molding Long Island NY" title="Ace's Injection Molding Inc." style="height:55px;width:auto;">
-                    
                 </a>
                 <p>Full-service plastic manufacturing — prototype to production under one roof. Bohemia, NY.</p>
             </div>
@@ -492,9 +496,9 @@
             <div class="footer-contact">
                 <p class="footer-heading"><strong>Contact</strong></p>
                 <ul>
-                    <li><i class="fas fa-phone"></i> <a href="tel:6318919855">(631) 891-9855</a></li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:paul@acesmolding.com">paul@acesmolding.com</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> Bohemia, NY 11716</li>
+                    <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:6318919855">(631) 891-9855</a></li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:paul@acesmolding.com">paul@acesmolding.com</a></li>
+                    <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bohemia, NY 11716</li>
                 </ul>
             </div>
         </div>

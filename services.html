@@ -189,9 +189,8 @@
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <img src="logo-clean.png" alt="Ace's Injection Molding Inc. logo — plastic injection molding Long Island NY" title="Ace's Injection Molding Inc." style="height:55px;width:auto;">
-                
             </a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
@@ -200,12 +199,12 @@
                 <li><a href="industries.html">Industries</a></li>
                 <li><a href="blog/index.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html" class="btn btn-nav">Request a Quote</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-nav">Request a Quote</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Services Hero with Video -->
+    <!-- Services Hero -->
     <header class="services-page-intro">
         <div class="container">
             <span class="section-tag animate-on-load">Our Capabilities</span>
@@ -214,11 +213,11 @@
         </div>
     </header>
 
-    <!-- Service Blocks — Alternating, Color-Themed -->
+    <!-- Service Blocks — Alternating -->
     <div class="service-showcase">
 
         <!-- 1. INJECTION MOLDING -->
-        <div class="service-block" data-theme="orange" id="injection-molding">
+        <div class="service-block" id="injection-molding">
             <div class="service-block__visual">
                 <video autoplay muted loop playsinline>
                     <source src="videos/injection-molding-machine.mp4" type="video/mp4">
@@ -227,167 +226,167 @@
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-cogs"></i> Core Service</span>
+                    <span class="service-block__tag"><i class="fas fa-cogs" aria-hidden="true"></i> Core Service</span>
                     <h2>Plastic Injection Molding</h2>
                     <p>Our core capability. We produce high-quality thermoplastic parts using precision injection molding — from small-batch prototyping runs to sustained production volumes. With in-house mold making, we control every step.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Thermoplastic and engineered resin processing</li>
-                        <li><i class="fas fa-check"></i> Tight tolerance molding for critical applications</li>
-                        <li><i class="fas fa-check"></i> Small to medium production runs</li>
-                        <li><i class="fas fa-check"></i> Insert molding and overmolding</li>
-                        <li><i class="fas fa-check"></i> Full color matching and texturing</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Thermoplastic and engineered resin processing</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Tight tolerance molding for critical applications</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Small to medium production runs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Insert molding and overmolding</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Full color matching and texturing</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
-                    <p style="margin-top:16px;font-size:0.9rem;color:var(--text-light);"><i class="fas fa-book-open" style="margin-right:6px;"></i> Learn more: <a href="blog/plastic-injection-molding-cost-guide.html" style="color:var(--orange);">Injection Molding Cost Guide</a> · <a href="blog/injection-molding-lead-times-explained.html" style="color:var(--orange);">Lead Times Explained</a> · <a href="blog/low-volume-injection-molding-small-runs.html" style="color:var(--orange);">Small Run Production</a></p>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <p class="learn-links"><i class="fas fa-book-open" aria-hidden="true"></i> Learn more: <a href="blog/plastic-injection-molding-cost-guide.html">Injection Molding Cost Guide</a> &middot; <a href="blog/injection-molding-lead-times-explained.html">Lead Times Explained</a> &middot; <a href="blog/low-volume-injection-molding-small-runs.html">Small Run Production</a></p>
                 </div>
             </div>
         </div>
 
         <!-- 2. MOLD MAKING -->
-        <div class="service-block service-block--dark" data-theme="blue" id="mold-making">
+        <div class="service-block service-block--dark" id="mold-making">
             <div class="service-block__visual">
-                <img src="images/mold-making-detail.jpg" alt="Precision CNC-machined injection mold cavity — custom mold making Long Island NY" title="Custom injection mold tooling — Ace's Injection Molding Bohemia NY" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                <img src="images/mold-making-detail.jpg" alt="Precision CNC-machined injection mold cavity — custom mold making Long Island NY" title="Custom injection mold tooling — Ace's Injection Molding Bohemia NY" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-cube"></i> Tooling</span>
+                    <span class="service-block__tag"><i class="fas fa-cube" aria-hidden="true"></i> Tooling</span>
                     <h2>Mold Making</h2>
                     <p>We design and build production-grade molds in-house — aluminum and steel tooling with fast turnaround and engineering support. Tooling and molding under one roof means faster iterations and lower costs.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Aluminum and steel mold construction</li>
-                        <li><i class="fas fa-check"></i> Single and multi-cavity mold designs</li>
-                        <li><i class="fas fa-check"></i> Mold repair and modification services</li>
-                        <li><i class="fas fa-check"></i> Engineering support and DFM analysis</li>
-                        <li><i class="fas fa-check"></i> Rapid turnaround on prototype molds</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Aluminum and steel mold construction</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Single and multi-cavity mold designs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Mold repair and modification services</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Engineering support and DFM analysis</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Rapid turnaround on prototype molds</li>
                     </ul>
-                    <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
-                        <a href="mold-making.html" class="btn btn-ghost">Full Capabilities <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-block__actions">
+                        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="mold-making.html" class="btn btn-ghost">Full Capabilities <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
-                    <p style="margin-top:16px;font-size:0.9rem;color:var(--text-light);"><i class="fas fa-book-open" style="margin-right:6px;"></i> Learn more: <a href="blog/how-injection-molds-are-made.html" style="color:var(--orange);">How Molds Are Made</a> · <a href="blog/p20-vs-h13-mold-steel.html" style="color:var(--orange);">P20 vs H13 Steel Guide</a> · <a href="blog/custom-mold-making-long-island-ny.html" style="color:var(--orange);">Custom Mold Making on Long Island</a></p>
+                    <p class="learn-links"><i class="fas fa-book-open" aria-hidden="true"></i> Learn more: <a href="blog/how-injection-molds-are-made.html">How Molds Are Made</a> &middot; <a href="blog/p20-vs-h13-mold-steel.html">P20 vs H13 Steel Guide</a> &middot; <a href="blog/custom-mold-making-long-island-ny.html">Custom Mold Making on Long Island</a></p>
                 </div>
             </div>
         </div>
 
         <!-- 3. RAPID PROTOTYPING -->
-        <div class="service-block" data-theme="green" id="rapid-prototyping">
+        <div class="service-block" id="rapid-prototyping">
             <div class="service-block__visual">
                 <img src="images/rapid-prototype-parts.jpg" alt="Rapid prototyping 3D printed and injection molded parts — functional prototypes Bohemia Long Island NY" title="Rapid prototyping services — Ace's Injection Molding" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-bolt"></i> Speed</span>
+                    <span class="service-block__tag"><i class="fas fa-bolt" aria-hidden="true"></i> Speed</span>
                     <h2>Rapid Prototyping</h2>
                     <p>Go from CAD to functional prototype in days. We combine 3D printing, printed molds, and rapid tooling to produce prototypes in production-grade materials — so you can test before committing to hard tooling.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Functional prototypes in production materials</li>
-                        <li><i class="fas fa-check"></i> Multiple iterations in days, not weeks</li>
-                        <li><i class="fas fa-check"></i> Bridge production with 3D printed molds</li>
-                        <li><i class="fas fa-check"></i> Design validation and fit testing</li>
-                        <li><i class="fas fa-check"></i> Seamless transition to production tooling</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Functional prototypes in production materials</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Multiple iterations in days, not weeks</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Bridge production with 3D printed molds</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Design validation and fit testing</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Seamless transition to production tooling</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
-                    <p style="margin-top:16px;font-size:0.9rem;color:var(--text-light);"><i class="fas fa-book-open" style="margin-right:6px;"></i> Learn more: <a href="blog/rapid-prototyping-to-production-injection-molding.html" style="color:var(--orange);">From Prototype to Production</a> · <a href="blog/plastic-injection-molding-long-island-ny.html" style="color:var(--orange);">Why Choose Local Manufacturing</a></p>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <p class="learn-links"><i class="fas fa-book-open" aria-hidden="true"></i> Learn more: <a href="blog/rapid-prototyping-to-production-injection-molding.html">From Prototype to Production</a> &middot; <a href="blog/plastic-injection-molding-long-island-ny.html">Why Choose Local Manufacturing</a></p>
                 </div>
             </div>
         </div>
 
         <!-- 4. 3D PRINTING -->
-        <div class="service-block service-block--dark" data-theme="purple" id="3d-printing">
+        <div class="service-block service-block--dark" id="3d-printing">
             <div class="service-block__visual">
                 <img src="images/creality-k2-plus-cfs.jpg" alt="Creality K2 Plus 3D printer with CFS multi-material system for FDM printing at Ace's Injection Molding Long Island NY" title="3D printing services — FDM and resin printing" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-print"></i> Additive</span>
+                    <span class="service-block__tag"><i class="fas fa-print" aria-hidden="true"></i> Additive</span>
                     <h2>3D Printing</h2>
                     <p>Standard additive manufacturing for concept models, functional prototypes, jigs, fixtures, and end-use parts. We run FDM and resin printers to cover a wide range of materials and applications.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> FDM and SLA/resin printing</li>
-                        <li><i class="fas fa-check"></i> ABS, PLA, PETG, nylon, and specialty filaments</li>
-                        <li><i class="fas fa-check"></i> Jigs, fixtures, and manufacturing aids</li>
-                        <li><i class="fas fa-check"></i> End-use parts for low-volume applications</li>
-                        <li><i class="fas fa-check"></i> Fast turnaround — most parts in 1–3 days</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> FDM and SLA/resin printing</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> ABS, PLA, PETG, nylon, and specialty filaments</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Jigs, fixtures, and manufacturing aids</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> End-use parts for low-volume applications</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Fast turnaround — most parts in 1–3 days</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- 5. LARGE FORMAT 3D -->
-        <div class="service-block" data-theme="teal" id="large-format-3d">
+        <div class="service-block" id="large-format-3d">
             <div class="service-block__visual">
                 <img src="images/modix-large-3d-printer.jpg" alt="Modix large format 3D printer for oversized parts and fixtures — large-scale additive manufacturing Long Island NY" title="Large format 3D printing — oversized parts without assembly" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-expand-arrows-alt"></i> Oversized</span>
+                    <span class="service-block__tag"><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> Oversized</span>
                     <h2>Large Format 3D Printing</h2>
                     <p>When standard build volumes aren't enough. Our large-format printers produce oversized parts, enclosures, panels, and fixtures as single pieces — eliminating assembly and reducing lead time.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Oversized parts printed as single pieces</li>
-                        <li><i class="fas fa-check"></i> Enclosures, housings, and structural components</li>
-                        <li><i class="fas fa-check"></i> Trade show models and display pieces</li>
-                        <li><i class="fas fa-check"></i> Eliminates multi-part assembly</li>
-                        <li><i class="fas fa-check"></i> Cost-effective for low-volume large parts</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Oversized parts printed as single pieces</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Enclosures, housings, and structural components</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Trade show models and display pieces</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Eliminates multi-part assembly</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Cost-effective for low-volume large parts</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- 6. HIGH-TEMP RESIN -->
-        <div class="service-block service-block--dark" data-theme="red" id="high-temp-resin">
+        <div class="service-block service-block--dark" id="high-temp-resin">
             <div class="service-block__visual">
                 <img src="images/mosaic-element-shot1.png" alt="Mosaic Element high-temperature resin 3D printer for engineered thermoplastic parts — Ace's Injection Molding" title="High-temp resin printing for demanding thermal and mechanical applications" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-fire"></i> Extreme</span>
+                    <span class="service-block__tag"><i class="fas fa-fire" aria-hidden="true"></i> Extreme</span>
                     <h2>High-Temp Resin Printing</h2>
                     <p>For applications where standard plastics won't cut it. We print with high-performance engineered resins that withstand extreme temperatures, chemical exposure, and mechanical stress.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Heat-resistant resins for demanding environments</li>
-                        <li><i class="fas fa-check"></i> Chemical and solvent resistance</li>
-                        <li><i class="fas fa-check"></i> Functional testing under real-world conditions</li>
-                        <li><i class="fas fa-check"></i> Ideal for under-hood and engine-bay components</li>
-                        <li><i class="fas fa-check"></i> Production-grade material properties</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Heat-resistant resins for demanding environments</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Chemical and solvent resistance</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Functional testing under real-world conditions</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Ideal for under-hood and engine-bay components</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Production-grade material properties</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- 7. 3D PRINTED MOLDS -->
-        <div class="service-block" data-theme="amber" id="3d-printed-molds">
+        <div class="service-block" id="3d-printed-molds">
             <div class="service-block__visual">
                 <img src="images/3d-printed-mold-real.jpg" alt="3D printed injection mold for bridge tooling and rapid prototyping — production-ready mold in days at Ace's Injection Molding" title="3D printed injection molds — bridge tooling in days" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-layer-group"></i> Bridge</span>
+                    <span class="service-block__tag"><i class="fas fa-layer-group" aria-hidden="true"></i> Bridge</span>
                     <h2>3D Printed Molds</h2>
                     <p>Bridge the gap between prototype and production. We 3D print injection molds that let you run real thermoplastic parts in days — perfect for design validation and bridge production.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Production-ready molds in days, not weeks</li>
-                        <li><i class="fas fa-check"></i> Run real thermoplastic materials</li>
-                        <li><i class="fas fa-check"></i> Bridge tooling while production molds are built</li>
-                        <li><i class="fas fa-check"></i> Design validation with actual molded parts</li>
-                        <li><i class="fas fa-check"></i> Dramatically reduced tooling costs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Production-ready molds in days, not weeks</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Run real thermoplastic materials</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Bridge tooling while production molds are built</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Design validation with actual molded parts</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Dramatically reduced tooling costs</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- 8. CO2 LASER -->
-        <div class="service-block service-block--dark" data-theme="cyan" id="co2-laser">
+        <div class="service-block service-block--dark" id="co2-laser">
             <div class="service-block__visual">
                 <video autoplay muted loop playsinline>
                     <source src="videos/co2-laser-cutting.mp4" type="video/mp4">
@@ -396,43 +395,40 @@
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-crosshairs"></i> Precision</span>
+                    <span class="service-block__tag"><i class="fas fa-crosshairs" aria-hidden="true"></i> Precision</span>
                     <h2>CO2 Laser Engraving</h2>
                     <p>Precision engraving and cutting on non-metallic materials. Our CO2 laser handles plastics, wood, glass, acrylic, leather, and more — ideal for branding, part marking, and custom signage.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Engraving on plastics, wood, glass, and acrylic</li>
-                        <li><i class="fas fa-check"></i> Part numbering and identification</li>
-                        <li><i class="fas fa-check"></i> Custom branding and logos</li>
-                        <li><i class="fas fa-check"></i> Precision cutting of thin materials</li>
-                        <li><i class="fas fa-check"></i> High-speed production marking</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Engraving on plastics, wood, glass, and acrylic</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Part numbering and identification</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Custom branding and logos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Precision cutting of thin materials</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> High-speed production marking</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- 9. FIBER LASER -->
-        <div class="service-block" data-theme="indigo" id="fiber-laser">
+        <div class="service-block" id="fiber-laser">
             <div class="service-block__visual">
-                <video autoplay muted loop playsinline>
-                    <source src="videos/laser-fiber-2.mp4" type="video/mp4">
-                    <source src="videos/laser-fiber-1.mp4" type="video/mp4">
-                </video>
+                <img src="images/fiber-laser-marking.jpg" alt="Fiber laser marking machine engraving permanent serial numbers on metal parts — traceability marking Long Island NY" title="Fiber laser engraving and marking — Ace's Injection Molding" loading="lazy">
                 <div class="service-block__visual-overlay"></div>
             </div>
             <div class="service-block__content">
                 <div class="service-block__inner">
-                    <span class="service-block__tag"><i class="fas fa-barcode"></i> Traceability</span>
+                    <span class="service-block__tag"><i class="fas fa-barcode" aria-hidden="true"></i> Traceability</span>
                     <h2>Fiber Laser Engraving &amp; Marking</h2>
                     <p>Permanent, high-contrast marking on metals and hard plastics. Essential for aerospace and medical traceability — serial numbers, data matrix codes, lot numbers, and regulatory marks.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Permanent marking on metals (steel, aluminum, titanium)</li>
-                        <li><i class="fas fa-check"></i> Data matrix and QR code serialization</li>
-                        <li><i class="fas fa-check"></i> Aerospace and medical traceability compliance</li>
-                        <li><i class="fas fa-check"></i> UDI and regulatory marking</li>
-                        <li><i class="fas fa-check"></i> High-speed, high-precision batch marking</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Permanent marking on metals (steel, aluminum, titanium)</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Data matrix and QR code serialization</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Aerospace and medical traceability compliance</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> UDI and regulatory marking</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> High-speed, high-precision batch marking</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -448,37 +444,37 @@
                 <p class="animate-in">Running plastic injection molding on Long Island since 2001 — real presses, real tooling experience, all under one roof in Bohemia, NY.</p>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;max-width:1000px;margin:0 auto 3rem;">
-                <div style="background:var(--gray-100);border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.8rem;font-weight:800;">25–400 Ton</div>
-                    <div style="opacity:.8;">Press tonnage range</div>
+            <div class="machine-stats">
+                <div class="machine-stat animate-in">
+                    <div class="machine-stat__value">25–400 Ton</div>
+                    <div class="machine-stat__label">Press tonnage range</div>
                 </div>
-                <div style="background:var(--gray-100);border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.8rem;font-weight:800;">14 Presses</div>
-                    <div style="opacity:.8;">In-house molding fleet</div>
+                <div class="machine-stat animate-in">
+                    <div class="machine-stat__value">14 Presses</div>
+                    <div class="machine-stat__label">In-house molding fleet</div>
                 </div>
-                <div style="background:var(--gray-100);border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.8rem;font-weight:800;">Dual Core Pull</div>
-                    <div style="opacity:.8;">For complex geometries</div>
+                <div class="machine-stat animate-in">
+                    <div class="machine-stat__value">Dual Core Pull</div>
+                    <div class="machine-stat__label">For complex geometries</div>
                 </div>
-                <div style="background:var(--gray-100);border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.8rem;font-weight:800;">Air Blast</div>
-                    <div style="opacity:.8;">Clean part ejection</div>
+                <div class="machine-stat animate-in">
+                    <div class="machine-stat__value">Air Blast</div>
+                    <div class="machine-stat__label">Clean part ejection</div>
                 </div>
-                <div style="background:var(--gray-100);border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.8rem;font-weight:800;">Desiccant Drying</div>
-                    <div style="opacity:.8;">Multiple dryers for engineering &amp; moisture-sensitive resins</div>
+                <div class="machine-stat animate-in">
+                    <div class="machine-stat__value">Desiccant Drying</div>
+                    <div class="machine-stat__label">Multiple dryers for engineering &amp; moisture-sensitive resins</div>
                 </div>
-                <div style="background:var(--gray-100);border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.8rem;font-weight:800;">Sprue Picker Robots</div>
-                    <div style="opacity:.8;">Automated, consistent cycles</div>
+                <div class="machine-stat animate-in">
+                    <div class="machine-stat__value">Sprue Picker Robots</div>
+                    <div class="machine-stat__label">Automated, consistent cycles</div>
                 </div>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;max-width:1000px;margin:0 auto;">
-                <div>
+            <div class="capabilities-cols">
+                <div class="animate-in">
                     <h3>Additional Services</h3>
-                    <ul class="service-features">
+                    <ul class="plain-list">
                         <li>Insert molding</li>
                         <li>Over molding</li>
                         <li>Mold sampling</li>
@@ -490,55 +486,55 @@
                         <li>Laser engraving of molds &amp; cavities</li>
                     </ul>
                 </div>
-                <div>
+                <div class="animate-in">
                     <h3>Materials We Run</h3>
-                    <ul class="service-features">
+                    <ul class="plain-list">
                         <li>Commodity resins</li>
                         <li>Engineering resins</li>
                         <li>Hygroscopic (moisture-sensitive) materials</li>
                     </ul>
-                    <p style="margin-top:1rem;opacity:.85;">Not sure which resin fits your part? We'll spec it with you.</p>
+                    <p class="note">Not sure which resin fits your part? We'll spec it with you.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="section" id="faq" style="background: var(--gray-100);">
+    <section class="section section--light" id="faq">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag animate-in">Common Questions</span>
                 <h2 class="animate-in">Frequently Asked <span class="highlight">Questions</span></h2>
                 <p class="animate-in">Answers to the questions we hear most from new customers.</p>
             </div>
-            <div class="faq-list" style="max-width:800px;margin:0 auto;">
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">What is the minimum order quantity for injection molding? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">We have no strict minimum order quantity. We regularly handle small runs of 100–500 parts and are happy to quote jobs of any size. Whether you need a short prototype run or ongoing production, we'll find an approach that fits your budget.</p>
+            <div class="faq-list">
+                <details class="faq-item animate-in">
+                    <summary>What is the minimum order quantity for injection molding?</summary>
+                    <p>We have no strict minimum order quantity. We regularly handle small runs of 100–500 parts and are happy to quote jobs of any size. Whether you need a short prototype run or ongoing production, we'll find an approach that fits your budget.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">How long does it take to make an injection mold? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">Typical lead times for a new injection mold range from 2–6 weeks depending on complexity, material (aluminum vs steel), and number of cavities. Simple aluminum prototype molds can be ready in as little as 1–2 weeks. We also offer 3D printed bridge molds that can be produced in days.</p>
+                <details class="faq-item animate-in">
+                    <summary>How long does it take to make an injection mold?</summary>
+                    <p>Typical lead times for a new injection mold range from 2–6 weeks depending on complexity, material (aluminum vs steel), and number of cavities. Simple aluminum prototype molds can be ready in as little as 1–2 weeks. We also offer 3D printed bridge molds that can be produced in days.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">What plastics do you work with? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">We process a wide range of thermoplastics including ABS, polypropylene, polyethylene, nylon, polycarbonate, acetal (Delrin), PETG, TPE/TPU, and engineered resins like PEEK and Ultem. We'll help you select the right material for your application's mechanical, thermal, and chemical requirements.</p>
+                <details class="faq-item animate-in">
+                    <summary>What plastics do you work with?</summary>
+                    <p>We process a wide range of thermoplastics including ABS, polypropylene, polyethylene, nylon, polycarbonate, acetal (Delrin), PETG, TPE/TPU, and engineered resins like PEEK and Ultem. We'll help you select the right material for your application's mechanical, thermal, and chemical requirements.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Can you help with mold design? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">Absolutely. We provide full engineering support including Design for Manufacturability (DFM) analysis, mold flow simulation guidance, gate and runner layout, and draft angle recommendations. Whether you have a finished CAD model or just a napkin sketch, we can help refine your design for optimal molding results.</p>
+                <details class="faq-item animate-in">
+                    <summary>Can you help with mold design?</summary>
+                    <p>Absolutely. We provide full engineering support including Design for Manufacturability (DFM) analysis, mold flow simulation guidance, gate and runner layout, and draft angle recommendations. Whether you have a finished CAD model or just a napkin sketch, we can help refine your design for optimal molding results.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Do you offer rapid prototyping before full production? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">Yes. We offer multiple prototyping paths: 3D printing (FDM, SLA, and high-temp resin), 3D printed injection molds for molded prototypes in production materials, and rapid aluminum tooling for bridge production. This lets you validate your design before investing in full production tooling.</p>
+                <details class="faq-item animate-in">
+                    <summary>Do you offer rapid prototyping before full production?</summary>
+                    <p>Yes. We offer multiple prototyping paths: 3D printing (FDM, SLA, and high-temp resin), 3D printed injection molds for molded prototypes in production materials, and rapid aluminum tooling for bridge production. This lets you validate your design before investing in full production tooling.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Where are you located? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">We're located in Bohemia on Long Island, New York (ZIP 11716). We serve customers across Long Island, the New York metro area, New Jersey, Connecticut, and ship nationwide. Our central Long Island location provides easy access for local customers who want to visit the shop or do on-site inspections.</p>
+                <details class="faq-item animate-in">
+                    <summary>Where are you located?</summary>
+                    <p>We're located in Bohemia on Long Island, New York (ZIP 11716). We serve customers across Long Island, the New York metro area, New Jersey, Connecticut, and ship nationwide. Our central Long Island location provides easy access for local customers who want to visit the shop or do on-site inspections.</p>
                 </details>
-                <details class="faq-item animate-in" style="margin-bottom:16px;border:1px solid var(--gray-200);border-radius:8px;padding:20px;background:#fff;">
-                    <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">What industries do you serve? <i class="fas fa-chevron-down" style="font-size:0.8rem;color:var(--text-light);"></i></summary>
-                    <p style="margin-top:12px;color:var(--text-light);line-height:1.7;">We serve aerospace, defense, aviation, automotive, medical device, consumer products, and electronics industries. Our capabilities in tight-tolerance molding, traceability marking, and engineered materials make us well-suited for demanding applications across all these sectors.</p>
+                <details class="faq-item animate-in">
+                    <summary>What industries do you serve?</summary>
+                    <p>We serve aerospace, defense, aviation, automotive, medical device, consumer products, and electronics industries. Our capabilities in tight-tolerance molding, traceability marking, and engineered materials make us well-suited for demanding applications across all these sectors.</p>
                 </details>
             </div>
         </div>
@@ -556,8 +552,8 @@
             <h2 class="animate-in">Have a Project in Mind?</h2>
             <p class="animate-in">Send us your specs, drawings, or just a rough idea. We'll figure out the best approach and get you a quote fast.</p>
             <div class="cta-cinematic__actions animate-in">
-                <a href="contact.html" class="btn btn-primary btn-lg btn-glow">Request a Quote <i class="fas fa-arrow-right"></i></a>
-                <a href="tel:6318919855" class="btn btn-ghost btn-lg"><i class="fas fa-phone"></i> (631) 891-9855</a>
+                <a href="contact.html" class="btn btn-primary btn-lg btn-glow">Request a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="tel:6318919855" class="btn btn-ghost btn-lg"><i class="fas fa-phone" aria-hidden="true"></i> (631) 891-9855</a>
             </div>
         </div>
     </section>
@@ -568,7 +564,6 @@
             <div class="footer-brand">
                 <a href="index.html" class="logo">
                     <img src="logo-clean.png" alt="Ace's Injection Molding Inc. logo — plastic injection molding Long Island NY" title="Ace's Injection Molding Inc." style="height:55px;width:auto;">
-                    
                 </a>
                 <p>Full-service plastic manufacturing — prototype to production under one roof. Bohemia, NY.</p>
             </div>
@@ -594,9 +589,9 @@
             <div class="footer-contact">
                 <p class="footer-heading"><strong>Contact</strong></p>
                 <ul>
-                    <li><i class="fas fa-phone"></i> <a href="tel:6318919855">(631) 891-9855</a></li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:paul@acesmolding.com">paul@acesmolding.com</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> Bohemia, NY 11716</li>
+                    <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:6318919855">(631) 891-9855</a></li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:paul@acesmolding.com">paul@acesmolding.com</a></li>
+                    <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bohemia, NY 11716</li>
                 </ul>
             </div>
         </div>
