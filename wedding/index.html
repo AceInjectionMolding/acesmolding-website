@@ -3,263 +3,796 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samantha & Matt — Lisbon, July 2026</title>
-<meta name="description" content="Guest guide for Samantha & Matt's wedding in Lisbon, Portugal — July 18, 2026">
-<script src="https://cdn.tailwindcss.com"></script>
+<title>Samantha &amp; Matt — Lisbon · July 18, 2026</title>
+<meta name="description" content="Everything you need for Samantha & Matt's wedding week in Lisbon — July 15–19, 2026. Schedule, hotel, Paul's picks, food, day trips, and tips.">
+<meta name="theme-color" content="#1D4E79">
+<meta property="og:title" content="Samantha &amp; Matt — Lisbon, July 18, 2026">
+<meta property="og:description" content="Your guest guide for the wedding week in Lisbon: schedule, hotel info, what to see, what to eat, and who to call.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://acesmolding.com/wedding/">
+<meta property="og:image" content="https://acesmolding.com/wedding/images/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     HOW THIS PAGE IS ORGANIZED (for future content updates)
+     Sections, in order:  hero · quick facts · welcome · #week
+     (schedule) · #hotel · #see (place cards) · #eat · #trips ·
+     #tips · #contact · footer.
+     · To add a place card: copy any <a class="place"> block inside
+       #see and change the name, note, and the maps ?query= text.
+     · To add a schedule item: copy a <li class="day"> block in #week.
+     · Coordinator details go in the clearly marked TBD card in #contact.
+     ============================================================ -->
+
 <style>
-  body { font-family: 'Inter', sans-serif; background-color: #FBF7F1; color: #2C2A28; }
-  .font-display { font-family: 'Playfair Display', serif; }
-  .terracotta { color: #C05A34; }
-  .bg-terracotta { background-color: #C05A34; }
-  .azulejo { color: #2A5C8A; }
-  .bg-azulejo { background-color: #2A5C8A; }
-  .card { background: #fff; border-radius: 1rem; box-shadow: 0 4px 20px rgba(44,42,40,0.06); }
-  .map-frame { border-radius: 0.75rem; overflow: hidden; }
+:root{
+  --ink:#2B2118;
+  --ink-soft:#5C5044;
+  --cream:#FAF4EA;
+  --cream-deep:#F1E7D6;
+  --white:#FFFFFF;
+  --blue:#1D4E79;
+  --blue-deep:#173E60;
+  --blue-tile:#2E6DA3;
+  --terra:#C4572E;
+  --terra-deep:#A8451D;
+  --border:#E6DBC8;
+  --shadow:0 2px 6px rgba(43,33,24,.05),0 12px 32px rgba(43,33,24,.07);
+  --radius:18px;
+  --tile-white:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='1.4'%3E%3Cpath d='M36 9 63 36 36 63 9 36Z'/%3E%3Ccircle cx='36' cy='36' r='7.5'/%3E%3Ccircle cx='0' cy='0' r='11'/%3E%3Ccircle cx='72' cy='0' r='11'/%3E%3Ccircle cx='0' cy='72' r='11'/%3E%3Ccircle cx='72' cy='72' r='11'/%3E%3C/g%3E%3C/svg%3E");
+  --tile-blue:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%231D4E79' stroke-width='1.4'%3E%3Cpath d='M36 9 63 36 36 63 9 36Z'/%3E%3Ccircle cx='36' cy='36' r='7.5'/%3E%3Ccircle cx='0' cy='0' r='11'/%3E%3Ccircle cx='72' cy='0' r='11'/%3E%3Ccircle cx='0' cy='72' r='11'/%3E%3Ccircle cx='72' cy='72' r='11'/%3E%3C/g%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;
+  font-family:'Instrument Sans',system-ui,-apple-system,sans-serif;
+  font-size:1.0625rem;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  touch-action:manipulation;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;line-height:1.15;margin:0;font-weight:600}
+p{margin:0}
+a{color:var(--blue);cursor:pointer}
+:focus-visible{outline:3px solid var(--terra);outline-offset:3px;border-radius:4px}
+.icon{width:1.25em;height:1.25em;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.25em}
+
+/* ---------- shared layout ---------- */
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}
+section{padding:3.5rem 0}
+section[id]{scroll-margin-top:4.5rem}
+.kicker{
+  display:flex;align-items:center;gap:.5rem;
+  font-size:.8125rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--terra-deep);margin-bottom:.75rem;
+}
+.kicker::before{content:"";width:.55em;height:.55em;background:var(--terra);transform:rotate(45deg);flex:none}
+.section-title{font-size:clamp(1.9rem,6.5vw,2.5rem);margin-bottom:.6rem}
+.section-lede{color:var(--ink-soft);margin-bottom:2rem;max-width:36rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* azulejo frieze divider */
+.frieze{height:38px;background-color:var(--white);background-image:var(--tile-blue);background-size:38px 38px;background-position:center;border-top:2px solid var(--blue);border-bottom:2px solid var(--blue);opacity:.9}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  min-height:min(88vh,52rem);min-height:min(88dvh,52rem);
+  display:flex;flex-direction:column;justify-content:center;
+  text-align:center;color:var(--white);
+  background:linear-gradient(168deg,var(--blue) 0%,var(--blue-deep) 55%,#122F49 100%);
+  padding:4rem 1.25rem 4.5rem;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:var(--tile-white);background-size:72px 72px;
+  opacity:.09;pointer-events:none;
+}
+.hero>*{position:relative}
+.hero-eyebrow{
+  font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:#EFD9A7;margin-bottom:1.25rem;
+}
+@media(min-width:480px){.hero-eyebrow{font-size:.8125rem;letter-spacing:.22em}}
+.hero-names{
+  font-size:clamp(2.75rem,13vw,5rem);
+  font-weight:600;font-variation-settings:'opsz' 100;
+  margin:0 auto;max-width:14ch;
+}
+.hero-names .amp{font-style:italic;font-weight:400;color:#EFD9A7;padding:0 .08em}
+.hero-sub{
+  font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:clamp(1.15rem,4.5vw,1.5rem);color:rgba(255,255,255,.92);
+  margin-top:1.1rem;
+}
+.hero-meta{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem .6rem;
+  margin-top:1.75rem;font-size:.9375rem;
+}
+.hero-meta span{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+  border-radius:999px;padding:.45rem 1rem;
+}
+.hero-cta-row{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2.25rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:3rem;padding:.7rem 1.5rem;border-radius:999px;
+  font-size:1rem;font-weight:600;text-decoration:none;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.btn:active{transform:scale(.97)}
+.btn-terra{background:var(--terra);color:var(--white);box-shadow:0 6px 20px rgba(196,87,46,.4)}
+.btn-terra:hover{background:#B14D26}
+.btn-ghost{background:rgba(255,255,255,.1);color:var(--white);border:1px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.countdown{margin-top:2.5rem;font-size:.9375rem;color:rgba(255,255,255,.75)}
+.countdown strong{color:#EFD9A7;font-weight:600}
+
+/* ---------- sticky nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,244,234,.92);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{
+  display:flex;gap:.35rem;overflow-x:auto;scrollbar-width:none;
+  padding:.55rem 1rem;max-width:44rem;margin:0 auto;
+  -webkit-overflow-scrolling:touch;
+}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav a{
+  flex:none;display:inline-flex;align-items:center;min-height:2.5rem;
+  padding:.35rem .95rem;border-radius:999px;
+  font-size:.9375rem;font-weight:500;text-decoration:none;color:var(--ink-soft);
+  transition:background .18s ease,color .18s ease;
+}
+.nav a:hover{background:var(--cream-deep)}
+.nav a.active{background:var(--blue);color:var(--white)}
+
+/* ---------- quick facts ---------- */
+.facts{background:var(--white);border-bottom:1px solid var(--border)}
+.facts-grid{
+  max-width:44rem;margin:0 auto;padding:1.4rem 1.25rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.5rem;
+}
+.fact{display:flex;gap:.7rem;align-items:flex-start;font-size:.9375rem;line-height:1.45}
+.fact .icon{width:1.4rem;height:1.4rem;color:var(--terra);margin-top:.1rem}
+.fact b{display:block;font-weight:600}
+.fact span{color:var(--ink-soft)}
+.fact a{text-decoration:none;font-weight:500}
+.fact a:hover{text-decoration:underline}
+@media(min-width:640px){.facts-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* ---------- welcome ---------- */
+.welcome p+p{margin-top:1rem}
+.welcome .lead{font-size:1.125rem}
+.signature{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.35rem;margin-top:1.5rem;color:var(--terra-deep)}
+.wip-note{
+  display:flex;gap:.7rem;align-items:flex-start;
+  margin-top:1.75rem;padding:.9rem 1.1rem;border-radius:12px;
+  background:var(--cream-deep);border:1px dashed #CBB88F;
+  font-size:.9375rem;color:var(--ink-soft);
+}
+.wip-note .icon{color:var(--terra-deep);margin-top:.15rem}
+
+/* ---------- schedule ---------- */
+.days{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.day{
+  display:grid;grid-template-columns:auto 1fr;gap:1.1rem;
+  padding:1.35rem 1.35rem;background:var(--white);
+  border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.day-date{
+  width:3.4rem;height:3.4rem;flex:none;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:var(--cream);border:1.5px solid var(--blue);border-radius:12px;
+  color:var(--blue);font-weight:600;line-height:1.05;
+}
+.day-date b{font-family:'Fraunces',Georgia,serif;font-size:1.35rem}
+.day-date span{font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase}
+.day h3{font-size:1.3rem;margin-bottom:.25rem}
+.day .when{font-size:.8125rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--terra-deep)}
+.day p{color:var(--ink-soft);margin-top:.35rem;font-size:.9875rem}
+.day.big{
+  background-color:var(--blue);border-color:var(--blue-deep);color:var(--white);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='.14' stroke-width='1.4'%3E%3Cpath d='M36 9 63 36 36 63 9 36Z'/%3E%3Ccircle cx='36' cy='36' r='7.5'/%3E%3Ccircle cx='0' cy='0' r='11'/%3E%3Ccircle cx='72' cy='0' r='11'/%3E%3Ccircle cx='0' cy='72' r='11'/%3E%3Ccircle cx='72' cy='72' r='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:72px 72px;
+}
+.day.big .day-date{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6);color:var(--white)}
+.day.big .when{color:#EFD9A7}
+.day.big h3{font-size:1.55rem}
+.day.big p{color:rgba(255,255,255,.88)}
+.shuttle{
+  display:flex;align-items:flex-start;gap:.6rem;margin-top:.9rem;
+  background:var(--terra);color:var(--white);font-weight:600;font-size:.9375rem;
+  padding:.7rem 1rem;border-radius:14px;line-height:1.4;
+}
+.shuttle .icon{width:1.3rem;height:1.3rem;flex:none;margin-top:.1rem}
+
+/* ---------- hotel ---------- */
+.hotel-card{overflow:hidden}
+.hotel-body{padding:1.5rem 1.5rem 1.75rem}
+.hotel-body h3{font-size:1.45rem;margin-bottom:.5rem}
+.hotel-body>p{color:var(--ink-soft)}
+.hotel-facts{display:grid;gap:.65rem;margin:1.25rem 0 0;padding:0;list-style:none;font-size:.9375rem}
+.hotel-facts li{display:flex;gap:.65rem;align-items:flex-start}
+.hotel-facts .icon{color:var(--terra);margin-top:.2rem}
+.hotel-facts a{text-decoration:none;font-weight:500}
+.hotel-facts a:hover{text-decoration:underline}
+.map-frame{height:15rem;border-top:1px solid var(--border)}
+.map-frame iframe{width:100%;height:100%;border:0;display:block}
+.map-cta{display:flex;gap:.75rem;flex-wrap:wrap;padding:1.1rem 1.5rem;border-top:1px solid var(--border);background:var(--cream)}
+.btn-blue{background:var(--blue);color:var(--white)}
+.btn-blue:hover{background:var(--blue-deep)}
+.btn-line{border:1.5px solid var(--blue);color:var(--blue);background:transparent}
+.btn-line:hover{background:rgba(29,78,121,.07)}
+
+/* ---------- places ---------- */
+.area-label{
+  display:flex;align-items:center;gap:.65rem;
+  font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:600;
+  margin:2.1rem 0 1rem;
+}
+.area-label:first-of-type{margin-top:0}
+.area-label::after{content:"";flex:1;height:1px;background:var(--border)}
+.area-label .icon{color:var(--terra)}
+.places{display:grid;gap:.85rem}
+@media(min-width:640px){.places{grid-template-columns:1fr 1fr}}
+.place{
+  display:flex;gap:1rem;align-items:center;
+  padding:1.05rem 1.15rem;text-decoration:none;color:inherit;
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.place:hover{transform:translateY(-2px);border-color:var(--blue-tile);box-shadow:0 6px 16px rgba(29,78,121,.14)}
+.place:active{transform:scale(.98)}
+.place-ico{
+  width:2.9rem;height:2.9rem;flex:none;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,#EAF1F8,#DCE9F4);color:var(--blue);
+}
+.place-ico .icon{width:1.45rem;height:1.45rem}
+.place h4{font-size:1.08rem;font-weight:600;font-family:'Instrument Sans',sans-serif}
+.place p{font-size:.875rem;color:var(--ink-soft);line-height:1.45;margin-top:.1rem}
+.place .go{margin-left:auto;color:var(--terra);flex:none}
+.tap-hint{display:flex;align-items:center;gap:.5rem;font-size:.9375rem;color:var(--ink-soft);margin-bottom:1.6rem}
+.tap-hint .icon{color:var(--terra)}
+
+/* ---------- eat ---------- */
+.dishes{display:grid;gap:.85rem}
+@media(min-width:640px){.dishes{grid-template-columns:1fr 1fr}}
+.dish{display:flex;gap:.9rem;padding:1.05rem 1.15rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.dish-ico{width:2.6rem;height:2.6rem;flex:none;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,#F9EBE2,#F4DDCE);color:var(--terra-deep)}
+.dish h4{font-size:1.05rem;font-weight:600;font-family:'Instrument Sans',sans-serif}
+.dish p{font-size:.875rem;color:var(--ink-soft);line-height:1.5;margin-top:.15rem}
+.tip-banner{
+  display:flex;gap:.8rem;align-items:flex-start;
+  margin-top:1.4rem;padding:1.05rem 1.2rem;border-radius:var(--radius);
+  background:linear-gradient(150deg,#FBEFE0,#F7E3CB);border:1px solid #EAD3AC;
+  font-size:.9375rem;
+}
+.tip-banner .icon{color:var(--terra-deep);flex:none;margin-top:.15rem;width:1.4rem;height:1.4rem}
+
+/* ---------- day trips ---------- */
+.trips{display:grid;gap:.85rem}
+@media(min-width:640px){.trips{grid-template-columns:repeat(3,1fr)}}
+.trip{
+  display:flex;flex-direction:column;gap:.5rem;
+  padding:1.3rem 1.25rem;text-decoration:none;color:inherit;
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.trip:hover{transform:translateY(-2px);border-color:var(--blue-tile);box-shadow:0 6px 16px rgba(29,78,121,.14)}
+.trip:active{transform:scale(.98)}
+.trip-top{display:flex;align-items:center;justify-content:space-between}
+.trip-top .icon{width:1.6rem;height:1.6rem;color:var(--blue)}
+.trip-top .go{color:var(--terra)}
+.trip h4{font-size:1.2rem}
+.trip p{font-size:.9rem;color:var(--ink-soft);line-height:1.5}
+.trip .dur{display:inline-flex;align-items:center;gap:.4rem;font-size:.8125rem;font-weight:600;color:var(--blue);margin-top:.2rem}
+
+/* ---------- tips ---------- */
+.tips-grid{display:grid;gap:1rem}
+@media(min-width:640px){.tips-grid{grid-template-columns:1fr 1fr}}
+.tip-card{padding:1.4rem 1.4rem 1.5rem}
+.tip-card h3{display:flex;align-items:center;gap:.6rem;font-size:1.25rem;margin-bottom:1rem}
+.tip-card h3 .icon{color:var(--terra);width:1.3rem;height:1.3rem}
+.tip-card ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem;font-size:.9375rem;color:var(--ink-soft)}
+.tip-card ul li{display:flex;gap:.6rem;align-items:flex-start}
+.tip-card ul .icon{width:1.1rem;height:1.1rem;color:var(--blue);margin-top:.25rem;flex:none}
+.phrase-list{list-style:none;margin:0;padding:0;font-size:.9375rem}
+.phrase-list li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px dashed var(--border)}
+.phrase-list li:last-child{border-bottom:0}
+.phrase-list .en{color:var(--ink-soft)}
+.phrase-list .pt{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;font-size:1.05rem;text-align:right}
+
+/* ---------- contact ---------- */
+.contact{
+  background:linear-gradient(168deg,var(--blue) 0%,var(--blue-deep) 100%);
+  color:var(--white);text-align:center;position:relative;overflow:hidden;
+}
+.contact::before{content:"";position:absolute;inset:0;background-image:var(--tile-white);background-size:72px 72px;opacity:.08;pointer-events:none}
+.contact .wrap{position:relative}
+.contact h2{font-size:clamp(1.9rem,6.5vw,2.5rem);margin-bottom:.9rem}
+.contact .section-lede{color:rgba(255,255,255,.85);margin:0 auto 2rem}
+.wa-btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  background:var(--white);color:var(--blue-deep);
+  font-size:1.05rem;font-weight:600;text-decoration:none;
+  min-height:3.4rem;padding:.85rem 1.8rem;border-radius:999px;
+  box-shadow:0 8px 28px rgba(0,0,0,.28);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.wa-btn:hover{transform:translateY(-2px)}
+.wa-btn:active{transform:scale(.97)}
+.wa-btn .icon{width:1.5rem;height:1.5rem;color:#1FA855}
+.wa-sub{margin-top:.9rem;font-size:.9375rem;color:rgba(255,255,255,.7)}
+.tbd-card{
+  margin:2.5rem auto 0;max-width:30rem;text-align:left;
+  padding:1.2rem 1.3rem;border-radius:var(--radius);
+  border:1.5px dashed rgba(255,255,255,.45);background:rgba(255,255,255,.07);
+  font-size:.9375rem;color:rgba(255,255,255,.85);
+  display:flex;gap:.8rem;align-items:flex-start;
+}
+.tbd-card .icon{flex:none;margin-top:.2rem;color:#EFD9A7}
+.tbd-card b{color:var(--white)}
+
+/* ---------- footer ---------- */
+.footer{text-align:center;padding:4rem 1.25rem 3.5rem}
+.footer-tile{
+  width:3.2rem;height:3.2rem;margin:0 auto 1.75rem;
+  background-color:var(--blue);background-image:var(--tile-white);background-size:3.2rem 3.2rem;background-position:center;
+  border-radius:10px;transform:rotate(45deg);opacity:.92;
+}
+.footer blockquote{
+  font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(1.3rem,5vw,1.6rem);
+  max-width:26ch;margin:0 auto;line-height:1.45;
+}
+.footer .signature{display:block;margin-top:1.4rem}
+.footer-fine{margin-top:2.5rem;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#A99A85}
 </style>
 </head>
-<body class="antialiased">
+<body>
 
-<!-- HERO -->
-<header class="relative">
-  <div class="w-full h-[60vh]" style="background: linear-gradient(135deg, #C05A34 0%, #8a3f26 50%, #2A5C8A 100%);"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
-  <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 text-white">
-    <p class="uppercase tracking-widest text-sm sm:text-base opacity-90 mb-2">A Wedding in Lisbon · July 2026</p>
-    <h1 class="font-display text-4xl sm:text-6xl font-bold leading-tight">Samantha &amp; Matt</h1>
-    <p class="text-lg sm:text-xl mt-2 opacity-95">July 18, 2026 · Pestana Palace, Lisbon</p>
+<!-- SVG icon sprite (referenced with <use>) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5S5 16.2 5 10.5a7 7 0 0 1 14 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10.5" r="2.6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.2 1.9"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21.5 16.9v2.1a2 2 0 0 1-2.2 2 19.9 19.9 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.9 19.9 0 0 1 1.6 3.2 2 2 0 0 1 3.6 1h2.1a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L6.7 8.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.6a8.5 8.5 0 0 1-8.5 8.4 8.8 8.8 0 0 1-3.8-.8L3 21l1.8-5.6A8.5 8.5 0 1 1 21 11.6z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="14" rx="2.5"/><path d="M4 10h16M8 3v7M16 3v7"/><circle cx="8" cy="14" r=".4"/><circle cx="16" cy="14" r=".4"/><path d="M7 17l-1.5 3.5M17 17l1.5 3.5"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2.5 5v15M2.5 9.5h17a2 2 0 0 1 2 2V20M2.5 16.5h19M6 9.5V7.8"/><circle cx="7.5" cy="12.9" r="1.4"/></symbol>
+  <symbol id="i-tower" viewBox="0 0 24 24"><path d="M8.5 20.5V6h7v14.5M8.5 6V3.5h2V5h3V3.5h2V6M5 20.5h14M11 20.5v-4a1 1 0 0 1 2 0v4M10 9.5h4"/></symbol>
+  <symbol id="i-monastery" viewBox="0 0 24 24"><path d="M3 21h18M12 2.5 3.5 8.5h17zM5.5 8.5V21M18.5 8.5V21M9 21v-5a3 3 0 0 1 6 0v5"/></symbol>
+  <symbol id="i-tart" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8.5"/><circle cx="12" cy="13" r="4.6"/><path d="M12 4.5V8M18 6.7l-2.2 2.8M6 6.7l2.2 2.8"/></symbol>
+  <symbol id="i-sunset" viewBox="0 0 24 24"><path d="M12 3v5M4.9 7.9l1.8 1.8M19.1 7.9l-1.8 1.8M2 15h3M19 15h3M17 17.5a5 5 0 0 0-10 0M2.5 21h19"/></symbol>
+  <symbol id="i-market" viewBox="0 0 24 24"><path d="M6.3 2.5 3.5 6.5v12a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-12l-2.8-4zM3.5 6.5h17M16 10.2a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 24 24"><path d="M7 12c2.2-3.5 5.6-5.2 9.2-5.2 2.7 0 4.4 2.1 5.3 5.2-.9 3.1-2.6 5.2-5.3 5.2-3.6 0-7-1.7-9.2-5.2z"/><path d="M7 12 2.5 8.3v7.4zM17.5 12h.01"/></symbol>
+  <symbol id="i-utensils" viewBox="0 0 24 24"><path d="M4 2.5v6a2.5 2.5 0 0 0 5 0v-6M6.5 2.5V21.5M19.5 15V2.5a4.5 4.5 0 0 0-4 4.5v6a2 2 0 0 0 2 2h2zM19.5 15v6.5"/></symbol>
+  <symbol id="i-wine" viewBox="0 0 24 24"><path d="M8 2.5h8l.8 6.5a4.8 4.8 0 0 1-9.6 0zM12 14v7M8 21h8"/></symbol>
+  <symbol id="i-cherry" viewBox="0 0 24 24"><circle cx="8.5" cy="16.5" r="3.5"/><circle cx="17" cy="17.5" r="2.8"/><path d="M8.5 13c0-4.5 2.5-8 8-10M17 14.7c.3-3.7-.8-6.9-3.5-9.5"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c4.4 0 7-2.8 7-7 0-3.2-2.1-5.7-4.1-8.2-.4 2-1.4 3.1-2.9 3.6C12.7 7.7 12 5 12 2 8.5 5.5 5 9.4 5 15c0 4.2 2.6 7 7 7z"/></symbol>
+  <symbol id="i-castle" viewBox="0 0 24 24"><path d="M9 20.5V4h6.5M9 4l6.5 1.7-6.5 1.7M5 20.5h14M12.5 20.5v-3.5a1.5 1.5 0 0 0-3 0v3.5M6 20.5v-8h12v8M6 12.5V11M18 12.5V11"/></symbol>
+  <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 8.5c1.7 1.6 3.3 1.6 5 0s3.3-1.6 5 0 3.3 1.6 5 0 3.3-1.6 5 0M2 14c1.7 1.6 3.3 1.6 5 0s3.3-1.6 5 0 3.3 1.6 5 0 3.3-1.6 5 0M2 19.5c1.7 1.6 3.3 1.6 5 0s3.3-1.6 5 0 3.3 1.6 5 0 3.3-1.6 5 0"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16.5H3.5v-4l2-1 1.8-4.3a2 2 0 0 1 1.8-1.2h5.8a2 2 0 0 1 1.8 1.2l1.8 4.3 2 1v4H19M5.5 11.5h13"/><circle cx="7.5" cy="16.5" r="2"/><circle cx="16.5" cy="16.5" r="2"/><path d="M9.5 16.5h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6.5 9.5 17 4 11.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5 3.5 14H11l-1 7.5L19.5 10H12z"/></symbol>
+  <symbol id="i-euro" viewBox="0 0 24 24"><path d="M18.5 5.5A8 8 0 0 0 6.7 8.5a8.3 8.3 0 0 0 0 7 8 8 0 0 0 11.8 3M3.5 10.5h11M3.5 13.5h11"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M20.4 6.6 16.5 4l-1.2 1.8a4 4 0 0 1-6.6 0L7.5 4 3.6 6.6l2 3.6L7.5 9v11.5h9V9l1.9 1.2z"/></symbol>
+  <symbol id="i-speak" viewBox="0 0 24 24"><path d="M2.5 5h11M8 2.5V5M11.5 5c-.8 3.7-3.4 7-7.5 9M6 9.5c1.4 2.4 3.7 4.2 6.5 5M22 21.5l-4.5-9.5L13 21.5M14.5 18h6"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2.5 14.2 9 21 11.5 14.2 14 12 20.5 9.8 14 3 11.5 9.8 9z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/></symbol>
+  <symbol id="i-go" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 24 24"><path d="M9.5 9.5V5a1.8 1.8 0 0 1 3.6 0v6l3.6.9a2.5 2.5 0 0 1 1.8 2.9l-.8 4a3 3 0 0 1-3 2.4H12a5 5 0 0 1-3.9-1.9L5 15.5a1.7 1.7 0 0 1 2.6-2.2l1.9 1.7z"/><path d="M6.5 5.5a4.8 4.8 0 0 1 9.6-.9"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5 4.7 13a4.8 4.8 0 0 1 6.8-6.8l.5.5.5-.5a4.8 4.8 0 0 1 6.8 6.8z"/></symbol>
+</svg>
+
+<!-- ======================= HERO ======================= -->
+<header class="hero" id="top">
+  <p class="hero-eyebrow">You're invited to Lisbon, Portugal</p>
+  <h1 class="hero-names">Samantha <span class="amp">&amp;</span> Matt</h1>
+  <p class="hero-sub">are getting married &mdash; and you're coming with us.</p>
+  <div class="hero-meta" role="list">
+    <span role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>July 18, 2026</span>
+    <span role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Pestana Palace, Lisbon</span>
+    <span role="listitem"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg>Guest week: July 15&ndash;19</span>
   </div>
+  <div class="hero-cta-row">
+    <a class="btn btn-terra" href="#week"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>See the week's plan</a>
+    <a class="btn btn-ghost" href="https://wa.me/16318919855?text=Hi%20Paul%20%E2%80%94%20question%20about%20the%20wedding%20week!" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp Paul</a>
+  </div>
+  <p class="countdown" id="countdown">July 18, 2026 &mdash; Lisbon, Portugal</p>
 </header>
 
-<!-- WELCOME NOTE -->
-<section class="max-w-3xl mx-auto px-6 py-14">
-  <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">A note from Paul & family</p>
-  <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">We're so glad you're coming.</h2>
-  <p class="text-lg leading-relaxed text-neutral-700">
-    Lisbon has always been special to our family, and we can't wait to share it with the people we love most.
-    A lot of you have asked what to see, where to eat, and how to make the most of the trip — so I put this
-    together to make it easy. Think of it less as a strict itinerary and more as a cheat sheet: what we're
-    doing as a group, and what's worth your time if you've got a few hours to explore on your own.
-  </p>
-  <p class="text-lg leading-relaxed text-neutral-700 mt-4">
-    This page will keep growing over the next week as I add more names, places, and details — check back
-    before you fly out.
-  </p>
-  <p class="font-display text-xl italic mt-6">With love, Paul &amp; Family</p>
+<!-- ======================= STICKY NAV ======================= -->
+<nav class="nav" aria-label="Sections">
+  <div class="nav-inner">
+    <a href="#week">Schedule</a>
+    <a href="#hotel">Hotel</a>
+    <a href="#see">See &amp; Do</a>
+    <a href="#eat">Eat &amp; Drink</a>
+    <a href="#trips">Day Trips</a>
+    <a href="#tips">Tips</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ======================= QUICK FACTS ======================= -->
+<div class="facts">
+  <div class="facts-grid">
+    <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><div><b>The big day</b><span>Sat, July 18</span></div></div>
+    <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-bus"/></svg><div><b>Shuttle to venue</b><span>4:30 PM from hotel</span></div></div>
+    <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-bed"/></svg><div><b>Home base</b><a href="#hotel">Pestana Palace</a></div></div>
+    <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><div><b>Questions?</b><a href="https://wa.me/16318919855" target="_blank" rel="noopener">WhatsApp Paul</a></div></div>
+  </div>
+</div>
+
+<!-- ======================= WELCOME ======================= -->
+<section class="welcome">
+  <div class="wrap">
+    <p class="kicker">A note from Paul &amp; family</p>
+    <h2 class="section-title">We're so glad you're coming.</h2>
+    <div style="margin-top:1.25rem">
+      <p class="lead">Lisbon has always been special to our family, and we can't wait to share it with the people we love most. A lot of you have asked what to see, where to eat, and how to make the most of the trip &mdash; so I put this together to make it easy.</p>
+      <p>Think of it less as a strict itinerary and more as a cheat sheet: what we're doing as a group, and what's worth your time when you've got a few hours to explore on your own.</p>
+      <p class="signature">With love, Paul &amp; Family</p>
+      <div class="wip-note">
+        <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+        <span>This page keeps growing &mdash; I'm adding names, places, and details all week. Check back before you fly out.</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ITINERARY -->
-<section class="bg-white py-14">
-  <div class="max-w-3xl mx-auto px-6">
-    <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">The wedding week</p>
-    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-8">Itinerary</h2>
-    <div class="space-y-8 border-l-2 border-neutral-200 pl-6">
+<div class="frieze" aria-hidden="true"></div>
 
-      <div>
-        <p class="text-sm font-semibold terracotta">WEDNESDAY, JULY 15</p>
-        <h3 class="font-display text-xl font-bold mt-1">Arrival Day</h3>
-        <p class="text-neutral-600 mt-1">Guest arrivals and hotel check-ins. Informal evening meet-up for early birds — details to come.</p>
+<!-- ======================= SCHEDULE ======================= -->
+<section id="week" style="background:var(--cream)">
+  <div class="wrap">
+    <p class="kicker">The wedding week</p>
+    <h2 class="section-title">Five days in Lisbon</h2>
+    <p class="section-lede">Group plans are in motion for a few of these &mdash; the rest of the time, the city is yours.</p>
+    <ul class="days">
+
+      <li class="day">
+        <div class="day-date" aria-hidden="true"><b>15</b><span>Wed</span></div>
+        <div>
+          <p class="when">Wednesday, July 15</p>
+          <h3>Arrival day</h3>
+          <p>Guest arrivals and hotel check-ins (rooms ready from 3:00 PM). Informal evening meet-up for the early birds &mdash; details to come.</p>
+        </div>
+      </li>
+
+      <li class="day">
+        <div class="day-date" aria-hidden="true"><b>16</b><span>Thu</span></div>
+        <div>
+          <p class="when">Thursday, July 16</p>
+          <h3>Settle in &amp; explore</h3>
+          <p>More arrivals throughout the day. If you're in early: wander Chiado and Baixa, grab lunch at Time Out Market, and catch sunset at a miradouro. No group plans yet &mdash; this one's yours.</p>
+        </div>
+      </li>
+
+      <li class="day">
+        <div class="day-date" aria-hidden="true"><b>17</b><span>Fri</span></div>
+        <div>
+          <p class="when">Friday, July 17</p>
+          <h3>Lisbon touring + welcome party</h3>
+          <p>Daytime is open &mdash; a Sintra or Cascais day trip, or an Alfama wander. In the evening: welcome drinks with the whole crew. Come meet everyone flying in.</p>
+        </div>
+      </li>
+
+      <li class="day big">
+        <div class="day-date" aria-hidden="true"><b>18</b><span>Sat</span></div>
+        <div>
+          <p class="when">Saturday, July 18</p>
+          <h3>The wedding</h3>
+          <p>Take the morning easy. Then: ceremony, cocktails, dinner, and dancing into the night at the Pestana Palace.</p>
+          <p class="shuttle"><svg class="icon" aria-hidden="true"><use href="#i-bus"/></svg>Transportation departs the hotel at 4:30 PM</p>
+        </div>
+      </li>
+
+      <li class="day">
+        <div class="day-date" aria-hidden="true"><b>19</b><span>Sun</span></div>
+        <div>
+          <p class="when">Sunday, July 19</p>
+          <h3>Farewell &amp; departures</h3>
+          <p>A slow morning, an optional beach run to Cascais for anyone sticking around, or off to the airport. Safe travels home &mdash; and thank you.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- ======================= HOTEL ======================= -->
+<section id="hotel" style="background:var(--white)">
+  <div class="wrap">
+    <p class="kicker">Where we're staying</p>
+    <h2 class="section-title">Pestana Palace Lisboa</h2>
+    <p class="section-lede">A 19th-century palace hotel in Alto de Santo Amaro, near Bel&eacute;m &mdash; gardens, indoor and outdoor pools, and about 20 minutes from the historic center. The hotel runs a shuttle into town; ask at the front desk.</p>
+    <div class="card hotel-card">
+      <div class="hotel-body">
+        <h3>The details</h3>
+        <ul class="hotel-facts">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Rua Jau 54, 1300-314 Lisbon, Portugal</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+351213615600">+351 21 361 5600</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Check-in 3:00 PM &middot; Check-out 12:00 PM</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-bus"/></svg><span><strong>Wedding day:</strong> transportation to the venue departs the hotel at 4:30 PM</span></li>
+        </ul>
+      </div>
+      <div class="map-frame">
+        <iframe title="Map showing Pestana Palace Lisboa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=38.7037251,-9.1867227&z=15&output=embed"></iframe>
+      </div>
+      <div class="map-cta">
+        <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=Pestana+Palace+Lisboa+Rua+Jau+54+Lisbon" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Open in Maps</a>
+        <a class="btn btn-line" href="tel:+351213615600"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call the hotel</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="frieze" aria-hidden="true"></div>
+
+<!-- ======================= SEE & DO ======================= -->
+<section id="see">
+  <div class="wrap">
+    <p class="kicker">Paul's picks</p>
+    <h2 class="section-title">Do not miss</h2>
+    <p class="tap-hint"><svg class="icon" aria-hidden="true"><use href="#i-tap"/></svg>Tap any spot to drop a pin straight into your Maps app.</p>
+
+    <h3 class="area-label"><svg class="icon" aria-hidden="true"><use href="#i-tower"/></svg>Bel&eacute;m &mdash; right by our hotel</h3>
+    <div class="places">
+      <!-- To add a place: copy one of these <a class="place"> blocks and edit the query, name, and note. -->
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Bel%C3%A9m+Tower+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-tower"/></svg></span>
+        <span><h4>Bel&eacute;m Tower</h4><p>The iconic riverfront fortress &mdash; Lisbon's postcard shot.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Jer%C3%B3nimos+Monastery+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-monastery"/></svg></span>
+        <span><h4>Jer&oacute;nimos Monastery</h4><p>Staggering Manueline architecture &mdash; worth the line.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Past%C3%A9is+de+Bel%C3%A9m+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-tart"/></svg></span>
+        <span><h4>Past&eacute;is de Bel&eacute;m</h4><p>The original custard tart, since 1837. Come hungry.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+    </div>
+
+    <h3 class="area-label"><svg class="icon" aria-hidden="true"><use href="#i-sunset"/></svg>The historic center</h3>
+    <div class="places">
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Miradouro+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-sunset"/></svg></span>
+        <span><h4>Miradouro de S&atilde;o Pedro de Alc&acirc;ntara</h4><p>Sunset views &mdash; arrive early to snag a kiosk table.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Miradouro+da+Senhora+do+Monte+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-sunset"/></svg></span>
+        <span><h4>Miradouro da Senhora do Monte</h4><p>The highest overlook in the city.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Manteigaria+Chiado+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-tart"/></svg></span>
+        <span><h4>Manteigaria</h4><p>Pastel de nata, warm out of the oven. Several locations.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Time+Out+Market+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-market"/></svg></span>
+        <span><h4>Time Out Market</h4><p>One food hall, the city's best chefs. Easy group lunch.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Cervejaria+Ramiro+Lisbon" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-fish"/></svg></span>
+        <span><h4>Cervejaria Ramiro</h4><p>Legendary seafood house. Reservations strongly advised.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= EAT & DRINK ======================= -->
+<section id="eat" style="background:var(--white)">
+  <div class="wrap">
+    <p class="kicker">Taste of Portugal</p>
+    <h2 class="section-title">What to eat &amp; drink</h2>
+    <p class="section-lede">You will not eat badly in Lisbon. But make sure these cross your table at least once.</p>
+    <div class="dishes">
+      <div class="dish">
+        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-tart"/></svg></span>
+        <span><h4>Pastel de nata</h4><p>Get one at Manteigaria and one at Past&eacute;is de Bel&eacute;m &mdash; then argue about which is better.</p></span>
+      </div>
+      <div class="dish">
+        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-fish"/></svg></span>
+        <span><h4>Bacalhau</h4><p>Portugal claims 100+ ways to cook its beloved salt cod. We won't judge your favorite.</p></span>
+      </div>
+      <div class="dish">
+        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-utensils"/></svg></span>
+        <span><h4>Grilled fish &amp; seafood</h4><p>Fresh off the boat, simply grilled. Ramiro is the legend &mdash; book ahead.</p></span>
+      </div>
+      <div class="dish">
+        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg></span>
+        <span><h4>Bifanas &amp; piri-piri chicken</h4><p>Casual, cheap, incredible. Best eaten standing at a counter.</p></span>
+      </div>
+      <div class="dish">
+        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-cherry"/></svg></span>
+        <span><h4>Ginjinha</h4><p>Sour-cherry liqueur, a Lisbon ritual. Order it <em>com</em> &mdash; with a cherry in the cup.</p></span>
+      </div>
+      <div class="dish">
+        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-wine"/></svg></span>
+        <span><h4>Vinho Verde &amp; Douro reds</h4><p>Ask your waiter to pick. You genuinely cannot go wrong.</p></span>
+      </div>
+    </div>
+    <div class="tip-banner">
+      <svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg>
+      <span><strong>Timing tip:</strong> July is peak sardine season &mdash; follow the smoke to charcoal grills in Alfama's lanes.</span>
+    </div>
+  </div>
+</section>
+
+<div class="frieze" aria-hidden="true"></div>
+
+<!-- ======================= DAY TRIPS ======================= -->
+<section id="trips">
+  <div class="wrap">
+    <p class="kicker">Beyond the city</p>
+    <h2 class="section-title">Day trips</h2>
+    <p class="section-lede">Best on Thursday or Friday daytime, before the welcome party. Tap a card for directions.</p>
+    <div class="trips">
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Sintra+Portugal" target="_blank" rel="noopener">
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-castle"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Sintra</h4>
+        <p>Pena Palace, Quinta da Regaleira, the Moorish Castle &mdash; fairytale palaces in misty hills.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~40 min from the hotel</span>
+      </a>
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Cascais+Portugal" target="_blank" rel="noopener">
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-waves"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Cascais &amp; Guincho</h4>
+        <p>Breezy coastal town plus a wild Atlantic beach. Stop at Cabo da Roca &mdash; the westernmost tip of Europe.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~30 min along the coast</span>
+      </a>
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Arr%C3%A1bida+Natural+Park+Portugal" target="_blank" rel="noopener">
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Set&uacute;bal &amp; Arr&aacute;bida</h4>
+        <p>Pristine turquoise coves, choco frito for lunch, and a ferry across to the Tr&oacute;ia peninsula.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~50 min south</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TIPS ======================= -->
+<section id="tips" style="background:var(--white)">
+  <div class="wrap">
+    <p class="kicker">The practical stuff</p>
+    <h2 class="section-title">Good to know</h2>
+    <p class="section-lede">Everything your group chat was going to ask anyway.</p>
+    <div class="tips-grid">
+
+      <div class="card tip-card">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>Getting around</h3>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Uber and Bolt are everywhere, cheap, and the easiest way to move around.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Tram 15 runs out toward Bel&eacute;m; the classic 28 winds through Alfama.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>The hotel shuttle can drop you in the center &mdash; ask the front desk for times.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Lisbon is hilly and cobbled &mdash; assume every walk has a climb in it.</span></li>
+        </ul>
       </div>
 
-      <div>
-        <p class="text-sm font-semibold terracotta">THURSDAY, JULY 16</p>
-        <h3 class="font-display text-xl font-bold mt-1">Settle In & Explore</h3>
-        <p class="text-neutral-600 mt-1">More arrivals throughout the day. If you're in early, wander Chiado and Baixa, grab lunch at Time Out Market, and catch sunset cocktails at a miradouro. No group plans yet — this one's yours.</p>
+      <div class="card tip-card">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Before you go</h3>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-euro"/></svg><span>Currency is the euro. Cards are accepted almost everywhere; keep a little cash for kiosks and trams.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg><span>Outlets are European two-pin (types C/F), 230V &mdash; pack an adapter.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg><span>July is hot and sunny &mdash; high 80s&deg;F days, breezy evenings by the river.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Tipping is modest here &mdash; rounding up or ~5&ndash;10% for great service is plenty.</span></li>
+        </ul>
       </div>
 
-      <div>
-        <p class="text-sm font-semibold terracotta">FRIDAY, JULY 17</p>
-        <h3 class="font-display text-xl font-bold mt-1">Lisbon Touring + Welcome Party</h3>
-        <p class="text-neutral-600 mt-1">Daytime is open for a Sintra or Cascais day trip, or an Alfama walking tour. In the evening: rooftop cocktails and a welcome party — come meet the rest of the family and friends flying in.</p>
+      <div class="card tip-card">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-shirt"/></svg>Pack for this</h3>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Comfortable walking shoes &mdash; seriously, the cobblestones are no joke.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Formal, dressy attire for the wedding day.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>A light layer for breezy evenings.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Swimsuit &mdash; for the hotel pools or a beach day.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Sunglasses and high-SPF sunscreen.</span></li>
+        </ul>
       </div>
 
-      <div class="bg-terracotta/5 border-l-4 border-terracotta -ml-6 pl-6 py-4 pr-4 rounded-r-xl">
-        <p class="text-sm font-semibold terracotta">SATURDAY, JULY 18</p>
-        <h3 class="font-display text-2xl font-bold mt-1">The Wedding — Pestana Palace</h3>
-        <p class="text-neutral-700 mt-1">Take the morning easy. Transportation to the venue departs at <strong>4:30 PM</strong>. Ceremony, cocktail hour, dinner reception, and dancing into the night.</p>
-      </div>
-
-      <div>
-        <p class="text-sm font-semibold terracotta">SUNDAY, JULY 19</p>
-        <h3 class="font-display text-xl font-bold mt-1">Farewell Brunch & Departure</h3>
-        <p class="text-neutral-600 mt-1">A relaxed morning, optional beach day in Cascais for anyone sticking around, or head to the airport. Safe travels home.</p>
+      <div class="card tip-card">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-speak"/></svg>Five words of Portuguese</h3>
+        <ul class="phrase-list">
+          <li><span class="en">Hello</span><span class="pt">Ol&aacute;</span></li>
+          <li><span class="en">Good morning</span><span class="pt">Bom dia</span></li>
+          <li><span class="en">Please</span><span class="pt">Por favor</span></li>
+          <li><span class="en">Thank you</span><span class="pt">Obrigado / Obrigada</span></li>
+          <li><span class="en">Cheers!</span><span class="pt">Sa&uacute;de</span></li>
+        </ul>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- HOTEL -->
-<section class="py-14">
-  <div class="max-w-3xl mx-auto px-6">
-    <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">Where we're staying</p>
-    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">Pestana Palace Lisboa</h2>
-    <div class="card p-6 sm:p-8">
-      <p class="text-neutral-700 leading-relaxed">
-        A 19th-century palace hotel in Alto de Santo Amaro, right near Belém — about 20 minutes from the
-        historic center, with a free shuttle into town. Beautiful gardens, indoor and outdoor pools.
-      </p>
-      <div class="mt-4 grid sm:grid-cols-2 gap-2 text-sm text-neutral-600">
-        <p><strong>Address:</strong> Rua Jau 54, 1300-314 Lisbon, Portugal</p>
-        <p><strong>Phone:</strong> +351 21 361 5600</p>
-        <p><strong>Check-in:</strong> 3:00 PM · <strong>Check-out:</strong> 12:00 PM</p>
-      </div>
-      <div class="map-frame mt-5 h-56">
-        <iframe class="w-full h-full border-0" loading="lazy" src="https://maps.google.com/maps?q=38.7037251,-9.1867227&z=15&output=embed"></iframe>
-      </div>
-      <a href="https://www.google.com/maps/search/?api=1&query=Pestana+Palace+Lisboa+Rua+Jau+54" target="_blank" class="inline-block mt-4 text-azulejo font-semibold hover:underline">📍 Open in Maps →</a>
-    </div>
-  </div>
-</section>
-
-<!-- INSIDER DO-NOT-MISS -->
-<section class="bg-white py-14">
-  <div class="max-w-3xl mx-auto px-6">
-    <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">Paul's picks</p>
-    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-2">Do Not Miss</h2>
-    <p class="text-neutral-600 mb-8">Tap any spot to drop a pin straight into your Maps app.</p>
-
-    <div class="grid sm:grid-cols-2 gap-6" id="places-grid">
-      <!-- place cards injected below -->
-    </div>
-  </div>
-</section>
-
-<!-- FOOD -->
-<section class="py-14">
-  <div class="max-w-3xl mx-auto px-6">
-    <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">Taste of Portugal</p>
-    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">What to Eat</h2>
-
-    <div class="grid sm:grid-cols-2 gap-4 text-neutral-700">
-      <ul class="space-y-2">
-        <li>🥧 <strong>Pastel de Nata</strong> — get one at Manteigaria and one at Pastéis de Belém, then argue about which is better</li>
-        <li>🐟 <strong>Bacalhau</strong> — Portugal has "100+ ways" to make it, we won't judge which you like best</li>
-        <li>🦐 <strong>Fresh grilled fish & seafood</strong> — Ramiro is the legend, reservations advised</li>
-      </ul>
-      <ul class="space-y-2">
-        <li>🍖 <strong>Bifanas & piri-piri chicken</strong> — casual, cheap, incredible</li>
-        <li>🍷 <strong>Ginjinha</strong> — a sour cherry liqueur, order it "com" (with a cherry in the cup), just for fun</li>
-        <li>🍇 <strong>Vinho Verde & Douro reds</strong> — ask your waiter, you won't go wrong</li>
-      </ul>
-    </div>
-    <div class="mt-6 bg-terracotta/10 rounded-xl p-4 text-sm">
-      <strong>Timing tip:</strong> July is peak sardine season — look for Santo António festival grills along Alfama's lanes.
-    </div>
-  </div>
-</section>
-
-<!-- DAY TRIPS -->
-<section class="bg-white py-14">
-  <div class="max-w-3xl mx-auto px-6">
-    <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">Beyond the city</p>
-    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-2">Day Trips</h2>
-    <p class="text-neutral-600 mb-8">Best on Thursday or Friday daytime, before the welcome party.</p>
-
-
-    <div class="grid sm:grid-cols-3 gap-5 text-sm">
-      <div class="card p-5">
-        <h4 class="font-display font-bold text-lg mb-1">Sintra</h4>
-        <p class="text-neutral-600">Pena Palace, Quinta da Regaleira, Moorish Castle — fairytale hills, about 40 min from the hotel.</p>
-      </div>
-      <div class="card p-5">
-        <h4 class="font-display font-bold text-lg mb-1">Cascais &amp; Guincho</h4>
-        <p class="text-neutral-600">Coastal town + wild Atlantic beach. Stop at Cabo da Roca, the westernmost point of Europe.</p>
-      </div>
-      <div class="card p-5">
-        <h4 class="font-display font-bold text-lg mb-1">Setúbal &amp; Arrábida</h4>
-        <p class="text-neutral-600">Pristine beaches, choco frito, and a ferry ride to the Tróia peninsula.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PHRASES + PACKING -->
-<section class="py-14">
-  <div class="max-w-3xl mx-auto px-6 grid sm:grid-cols-2 gap-10">
-    <div>
-      <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">Sip & speak</p>
-      <h2 class="font-display text-2xl font-bold mb-4">Useful Phrases</h2>
-      <div class="card p-5 text-sm space-y-2">
-        <div class="flex justify-between"><span class="text-neutral-500">Hello</span><span class="font-semibold italic">Olá</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Thank you</span><span class="font-semibold italic">Obrigado / Obrigada</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Please</span><span class="font-semibold italic">Por favor</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Cheers</span><span class="font-semibold italic">Saúde</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Good morning</span><span class="font-semibold italic">Bom dia</span></div>
-      </div>
-    </div>
-    <div>
-      <p class="text-sm uppercase tracking-widest terracotta font-semibold mb-3">Before you go</p>
-      <h2 class="font-display text-2xl font-bold mb-4">Pack For This</h2>
-      <div class="card p-5 text-sm space-y-2 text-neutral-700">
-        <p>✔️ Comfortable walking shoes (seriously — cobblestones everywhere)</p>
-        <p>✔️ A light layer for breezy evenings</p>
-        <p>✔️ Formal, dressy wedding attire</p>
-        <p>✔️ Swimsuit, if you're doing a beach day</p>
-        <p>✔️ Sunglasses + high-SPF sunscreen</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="bg-azulejo text-white py-16">
-  <div class="max-w-3xl mx-auto px-6 text-center">
-    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">Questions? Just text me.</h2>
-    <p class="text-white/85 mb-6 max-w-lg mx-auto">
-      Coordinator details and a few more spots are still being added this week — but for anything urgent
-      before or during the trip, reach out any time.
-    </p>
-    <a href="https://wa.me/16318919855" target="_blank"
-       class="inline-flex items-center gap-2 bg-white text-azulejo font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition">
-      💬 WhatsApp Paul — +1 (631) 891-9855
+<!-- ======================= CONTACT ======================= -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Questions? Just text me.</h2>
+    <p class="section-lede">For anything at all &mdash; before the trip or in the middle of it &mdash; message me any time.</p>
+    <a class="wa-btn" href="https://wa.me/16318919855?text=Hi%20Paul%20%E2%80%94%20question%20about%20the%20wedding%20week!" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+      WhatsApp Paul
     </a>
-    <p class="text-white/60 text-sm mt-8">Wedding Coordinator &amp; local contact — details coming soon</p>
+    <p class="wa-sub">+1 (631) 891-9855 &middot; opens straight into a chat</p>
+
+    <!-- COORDINATOR TBD — Paul is adding this. Replace this card's text when details arrive. -->
+    <div class="tbd-card">
+      <svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
+      <span><b>Wedding coordinator &amp; day-of contacts</b> &mdash; being finalized now. Names and numbers will appear right here soon; check back before the big day.</span>
+    </div>
   </div>
 </section>
 
-<!-- CLOSING -->
-<section class="py-16 text-center px-6">
-  <div class="w-16 h-16 rounded-full mx-auto mb-6" style="background: linear-gradient(135deg, #C05A34, #2A5C8A);"></div>
-  <p class="font-display text-2xl italic max-w-xl mx-auto leading-relaxed">
-    "Enjoy the food. Enjoy the beauty. Enjoy the people.<br>Most of all — enjoy celebrating with us."
-  </p>
-  <p class="font-display text-lg mt-6">With love, Paul &amp; Family</p>
-  <p class="text-neutral-400 text-xs mt-10 uppercase tracking-widest">Samantha &amp; Matt · Lisbon · July 18, 2026</p>
-</section>
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="footer-tile" aria-hidden="true"></div>
+  <blockquote>&ldquo;Enjoy the food. Enjoy the beauty. Enjoy the people. Most of all &mdash; enjoy celebrating with us.&rdquo;</blockquote>
+  <span class="signature">With love, Paul &amp; Family</span>
+  <p class="footer-fine">Samantha &amp; Matt &middot; Lisbon &middot; July 18, 2026</p>
+</footer>
 
 <script>
-const places = [
-  {name:"Miradouro de São Pedro de Alcântara", note:"Sunset views, arrive early for a kiosk spot.", lat:38.7154373, lon:-9.1440476},
-  {name:"Miradouro da Senhora do Monte", note:"The highest overlook in the city.", lat:38.7191589, lon:-9.1328103},
-  {name:"Manteigaria", note:"Pastel de nata, fresh out of the oven.", lat:38.6971728, lon:-9.2021881},
-  {name:"Time Out Market", note:"Food hall gathering the city's best chefs.", lat:38.7070934, lon:-9.1458973},
-  {name:"Belém Tower", note:"Iconic waterfront monument.", lat:38.6915860, lon:-9.2159288},
-  {name:"Jerónimos Monastery", note:"Stunning Manueline architecture.", lat:38.6977531, lon:-9.2055912},
-  {name:"Pastéis de Belém", note:"The original — come hungry.", lat:38.6974795, lon:-9.2033202},
-  {name:"Cervejaria Ramiro", note:"Legendary seafood, reservations advised.", lat:38.7201981, lon:-9.1357063},
-];
+// Countdown to the wedding day
+(function(){
+  var el = document.getElementById('countdown');
+  var now = new Date();
+  var wedding = new Date(2026, 6, 18); // July 18, 2026 (local time)
+  var days = Math.ceil((wedding - now) / 86400000);
+  if (days > 1) {
+    el.innerHTML = '<strong>' + days + ' days</strong> until we say sa&uacute;de in Lisbon';
+  } else if (days === 1) {
+    el.innerHTML = '<strong>Tomorrow.</strong> See you at 4:30 PM sharp.';
+  } else if (days === 0) {
+    el.innerHTML = '<strong>It’s today!</strong> Shuttle leaves the hotel at 4:30 PM.';
+  } else {
+    el.innerHTML = 'Married <strong>July 18, 2026</strong> in Lisbon — obrigado for celebrating with us.';
+  }
+})();
 
-const grid = document.getElementById("places-grid");
-places.forEach(p => {
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name + ", Lisbon")}`;
-  const embedUrl = `https://maps.google.com/maps?q=${p.lat},${p.lon}&z=15&output=embed`;
-  const card = document.createElement("a");
-  card.href = mapsUrl;
-  card.target = "_blank";
-  card.className = "card overflow-hidden block hover:shadow-lg transition";
-  card.innerHTML = `
-    <div class="map-frame h-32 pointer-events-none">
-      <iframe class="w-full h-full border-0" loading="lazy" src="${embedUrl}"></iframe>
-    </div>
-    <div class="p-4">
-      <h4 class="font-display font-bold text-lg">${p.name}</h4>
-      <p class="text-neutral-600 text-sm mt-1">${p.note}</p>
-      <p class="azulejo text-sm font-semibold mt-2">📍 Open in Maps →</p>
-    </div>`;
-  grid.appendChild(card);
-});
+// Highlight the nav chip for the section in view
+(function(){
+  if (!('IntersectionObserver' in window)) return;
+  var links = document.querySelectorAll('.nav a');
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting && map[e.target.id]) {
+        links.forEach(function(a){ a.classList.remove('active'); });
+        map[e.target.id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-25% 0px -65% 0px' });
+  document.querySelectorAll('section[id]').forEach(function(s){ observer.observe(s); });
+})();
 </script>
 
 </body>
