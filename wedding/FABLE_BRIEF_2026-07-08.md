@@ -124,6 +124,21 @@ requirement — don't skip this, it's a real license condition, not a suggestion
 Still preference order stands: Paul's own photos (`portugal-paul/`, `couple/`) first, these stock
 images only for locations Paul didn't personally shoot.
 
+## Round 5 (2026-07-08) — Paul's photo, hotel photos, Friday venue name confirmed
+1. **Paul's own photo** — staged at `wedding/images/paul/image0.jpeg` (clean professional
+   portrait). Paul wants this used near/in the "A note from Paul & family" welcome section
+   **at the beginning of the page**, not the end.
+2. **Pestana Palace exterior/garden photos** — sourced from Wikimedia Commons (CC BY-SA 2.0,
+   attributed in `wedding/images/stock/ATTRIBUTION.txt`), staged at
+   `wedding/images/stock/pestana-palace-1.jpg` and `pestana-palace-2.jpg`. Use in the Hotel
+   section alongside the existing address/map/phone details.
+3. **Friday, July 17 welcome party venue — CONFIRMED, add to the itinerary:**
+   **SOL Restaurante e Jardim**, a rooftop terrace/garden restaurant with panoramic Alfama +
+   Tagus river views. Address: Largo das Portas do Sol, Beco de Santa Helena, Lisbon 1100-411,
+   Portugal. Phone: +351 21 885 1299. Add this as a specific, named, tappable-map location on
+   the Friday schedule card (currently just says "welcome drinks" with no venue name) — same
+   tap-to-open-Maps pattern as everything else on the site.
+
 ## Deploy
 Push to `main` in `~/acesmolding-website` (wedding/ subfolder) — Netlify auto-deploys. Live URL:
 https://acesmolding.com/wedding/
