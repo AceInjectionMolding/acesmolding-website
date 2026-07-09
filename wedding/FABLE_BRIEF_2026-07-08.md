@@ -106,6 +106,24 @@ afternoon) — visually/structurally distinct from Day Trips so guests don't con
 - Tone: still personal/Paul's-voice, but honest that this is a bigger commitment than Sintra or
   Cascais — a "if you're extending your trip" framing, not "squeeze this in before the wedding."
 
+## Round 4 (2026-07-08) — stock photos sourced for Algarve/food/existing day-trip spots
+Paul asked for real photos of the Algarve towns, grilled sardines/seafood, and Sintra/Cascais/Setúbal
+(none of Paul's own Portugal photos happened to cover these). Sourced from Wikimedia Commons
+(all CC-licensed, reusable with attribution) and staged at `wedding/images/stock/`:
+
+- `vilamoura.jpg`, `lagos.jpg`, `albufeira.JPG`, `sagres.jpg` — Algarve towns for the new extended-trips section
+- `sardines.jpg`, `seafood.jpg` — for the food section
+- `sintra.jpg`, `cascais.jpg`, `setubal.jpg` — for the existing Day Trips section (fallback since
+  Paul's own photos didn't cover these three)
+
+**IMPORTANT — attribution required:** these are CC BY/CC BY-SA licensed (one is CC0), not public
+domain. `wedding/images/stock/ATTRIBUTION.txt` has the license + artist + source link for each.
+Add a small, unobtrusive photo-credits section/footer note on the page satisfying the attribution
+requirement — don't skip this, it's a real license condition, not a suggestion.
+
+Still preference order stands: Paul's own photos (`portugal-paul/`, `couple/`) first, these stock
+images only for locations Paul didn't personally shoot.
+
 ## Deploy
 Push to `main` in `~/acesmolding-website` (wedding/ subfolder) — Netlify auto-deploys. Live URL:
 https://acesmolding.com/wedding/
