@@ -177,7 +177,39 @@ section[id]{scroll-margin-top:4.5rem}
 .fact a:hover{text-decoration:underline}
 @media(min-width:640px){.facts-grid{grid-template-columns:repeat(4,1fr)}}
 
+/* ---------- couple polaroid strip ---------- */
+.couple{background:var(--white);border-bottom:1px solid var(--border);padding:2.75rem 0 3rem}
+.polaroids{
+  display:flex;gap:1.1rem;overflow-x:auto;padding:1.25rem 1.25rem 1.5rem;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.polaroids::-webkit-scrollbar{display:none}
+.polaroid{
+  flex:none;scroll-snap-align:center;
+  background:var(--white);border:1px solid var(--border);
+  padding:.55rem .55rem 2rem;border-radius:6px;
+  box-shadow:0 3px 10px rgba(43,33,24,.12),0 14px 30px rgba(43,33,24,.1);
+}
+.polaroid img{display:block;height:17rem;width:auto;border-radius:3px}
+.polaroid:nth-child(odd){transform:rotate(-1.6deg)}
+.polaroid:nth-child(even){transform:rotate(1.4deg)}
+.couple .kicker{justify-content:center}
+.couple h2{text-align:center;font-size:clamp(1.7rem,5.5vw,2.1rem)}
+.couple .aside{text-align:center;color:var(--ink-soft);font-size:.9375rem;margin-top:.35rem}
+
 /* ---------- welcome ---------- */
+.welcome-grid{display:grid;gap:2rem;margin-top:1.25rem}
+@media(min-width:560px){.welcome-grid{grid-template-columns:1fr 13rem;align-items:start}}
+.portrait{max-width:15rem;margin:0 auto}
+.portrait img{
+  display:block;width:100%;height:auto;border-radius:14px;
+  border:4px solid var(--white);outline:1px solid var(--border);
+  box-shadow:0 6px 18px rgba(43,33,24,.16);transform:rotate(1.6deg);
+}
+.portrait figcaption{
+  text-align:center;font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:.9375rem;color:var(--ink-soft);margin-top:.8rem;
+}
 .welcome p+p{margin-top:1rem}
 .welcome .lead{font-size:1.125rem}
 .signature{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.35rem;margin-top:1.5rem;color:var(--terra-deep)}
@@ -241,6 +273,23 @@ section[id]{scroll-margin-top:4.5rem}
 .btn-line{border:1.5px solid var(--blue);color:var(--blue);background:transparent}
 .btn-line:hover{background:rgba(29,78,121,.07)}
 
+/* ---------- venue pill (tappable place inside a schedule card) ---------- */
+.venue-link{
+  display:flex;align-items:flex-start;gap:.6rem;margin-top:.9rem;
+  background:var(--terra);color:var(--white);font-weight:600;font-size:.9375rem;
+  padding:.7rem 1rem;border-radius:14px;line-height:1.4;text-decoration:none;
+  transition:background .18s ease,transform .18s ease;
+}
+.venue-link:hover{background:#B14D26}
+.venue-link:active{transform:scale(.98)}
+.venue-link .icon{width:1.3rem;height:1.3rem;flex:none;margin-top:.1rem}
+.venue-link small{display:block;font-weight:400;font-size:.8125rem;color:rgba(255,255,255,.85)}
+
+/* ---------- hotel photos ---------- */
+.hotel-photos{display:grid;grid-template-columns:1.55fr 1fr;gap:.6rem;padding:.6rem .6rem 0}
+.hotel-photos img{width:100%;height:11rem;object-fit:cover;border-radius:12px;display:block}
+@media(min-width:560px){.hotel-photos img{height:14rem}}
+
 /* ---------- places ---------- */
 .area-label{
   display:flex;align-items:center;gap:.65rem;
@@ -270,6 +319,20 @@ section[id]{scroll-margin-top:4.5rem}
 .place h4{font-size:1.08rem;font-weight:600;font-family:'Instrument Sans',sans-serif}
 .place p{font-size:.875rem;color:var(--ink-soft);line-height:1.45;margin-top:.1rem}
 .place .go{margin-left:auto;color:var(--terra);flex:none}
+/* photo variant of a place card */
+.place-photo{
+  display:flex;flex-direction:column;padding:0;overflow:hidden;
+}
+.place-photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
+.place-photo .pp-body{display:flex;gap:.9rem;align-items:center;padding:.95rem 1.15rem}
+.place-photo .pp-body .go{margin-left:auto;color:var(--terra);flex:none}
+.by-paul{
+  position:absolute;top:.7rem;left:.7rem;
+  background:rgba(43,33,24,.62);color:#F5EBDB;font-size:.6875rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;padding:.25rem .6rem;border-radius:999px;
+  -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+}
+.pp-media{position:relative}
 .tap-hint{display:flex;align-items:center;gap:.5rem;font-size:.9375rem;color:var(--ink-soft);margin-bottom:1.6rem}
 .tap-hint .icon{color:var(--terra)}
 
@@ -278,6 +341,8 @@ section[id]{scroll-margin-top:4.5rem}
 @media(min-width:640px){.dishes{grid-template-columns:1fr 1fr}}
 .dish{display:flex;gap:.9rem;padding:1.05rem 1.15rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
 .dish-ico{width:2.6rem;height:2.6rem;flex:none;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,#F9EBE2,#F4DDCE);color:var(--terra-deep)}
+.dish-photo{width:3.4rem;height:3.4rem;flex:none;border-radius:12px;object-fit:cover;display:block}
+.tip-banner .tip-photo{width:4.6rem;height:3.2rem;flex:none;border-radius:10px;object-fit:cover;display:block}
 .dish h4{font-size:1.05rem;font-weight:600;font-family:'Instrument Sans',sans-serif}
 .dish p{font-size:.875rem;color:var(--ink-soft);line-height:1.5;margin-top:.15rem}
 .tip-banner{
@@ -305,6 +370,58 @@ section[id]{scroll-margin-top:4.5rem}
 .trip h4{font-size:1.2rem}
 .trip p{font-size:.9rem;color:var(--ink-soft);line-height:1.5}
 .trip .dur{display:inline-flex;align-items:center;gap:.4rem;font-size:.8125rem;font-weight:600;color:var(--blue);margin-top:.2rem}
+.trip-media{position:relative;margin:-1.3rem -1.25rem .35rem;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
+.trip-media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+
+/* ---------- extended trips ---------- */
+.ext-intro{
+  display:flex;gap:.8rem;align-items:flex-start;
+  padding:1.05rem 1.2rem;border-radius:var(--radius);margin-bottom:1.6rem;
+  background:linear-gradient(150deg,#EAF1F8,#DCE9F4);border:1px solid #C7DAEA;
+  font-size:.9375rem;color:var(--ink);
+}
+.ext-intro .icon{color:var(--blue);flex:none;margin-top:.15rem;width:1.4rem;height:1.4rem}
+.ext-grid{display:grid;gap:.85rem}
+@media(min-width:640px){.ext-grid{grid-template-columns:1fr 1fr}}
+.far-label{
+  display:flex;align-items:center;gap:.65rem;
+  font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:600;
+  margin:2.1rem 0 1rem;
+}
+.far-label::after{content:"";flex:1;height:1px;background:var(--border)}
+.far-label .icon{color:var(--terra)}
+.far{display:grid;gap:.85rem}
+.far-card{
+  display:flex;gap:1rem;align-items:flex-start;
+  padding:1.2rem 1.25rem;text-decoration:none;color:inherit;
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.far-card:hover{transform:translateY(-2px);border-color:var(--blue-tile);box-shadow:0 6px 16px rgba(29,78,121,.14)}
+.far-card:active{transform:scale(.98)}
+.far-card .place-ico{margin-top:.1rem}
+.far-card h4{font-size:1.15rem;font-family:'Fraunces',Georgia,serif}
+.far-card p{font-size:.9rem;color:var(--ink-soft);line-height:1.5;margin-top:.25rem}
+.far-card .go{margin-left:auto;color:var(--terra);flex:none;margin-top:.2rem}
+.badge{
+  display:inline-block;font-size:.6875rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  padding:.2rem .6rem;border-radius:999px;margin-left:.5rem;vertical-align:.15em;
+}
+.badge-terra{background:#F7E3CB;color:var(--terra-deep)}
+
+/* ---------- snapshots strip ---------- */
+.snaps{background:var(--white);padding:2.75rem 0 3rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.snaps .kicker{justify-content:center}
+.snaps h2{text-align:center;font-size:clamp(1.7rem,5.5vw,2.1rem)}
+.snaps .aside{text-align:center;color:var(--ink-soft);font-size:.9375rem;margin-top:.35rem;padding:0 1.25rem}
+.snap-row{
+  display:flex;gap:.9rem;overflow-x:auto;padding:1.4rem 1.25rem .6rem;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.snap-row::-webkit-scrollbar{display:none}
+.snap{flex:none;scroll-snap-align:center;width:15.5rem}
+.snap img{width:100%;height:11.5rem;object-fit:cover;border-radius:14px;display:block;box-shadow:var(--shadow)}
+.snap figcaption{font-size:.8125rem;color:var(--ink-soft);margin-top:.5rem;text-align:center}
 
 /* ---------- tips ---------- */
 .tips-grid{display:grid;gap:1rem}
@@ -365,6 +482,10 @@ section[id]{scroll-margin-top:4.5rem}
 }
 .footer .signature{display:block;margin-top:1.4rem}
 .footer-fine{margin-top:2.5rem;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#A99A85}
+.credits{max-width:38rem;margin:2.25rem auto 0;text-align:left;font-size:.72rem;line-height:1.6;color:#A99A85}
+.credits summary{cursor:pointer;text-align:center;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#A99A85}
+.credits a{color:#8B7B63}
+.credits p{margin-top:.6rem}
 </style>
 </head>
 <body>
@@ -401,6 +522,7 @@ section[id]{scroll-margin-top:4.5rem}
   <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/></symbol>
   <symbol id="i-go" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
   <symbol id="i-tap" viewBox="0 0 24 24"><path d="M9.5 9.5V5a1.8 1.8 0 0 1 3.6 0v6l3.6.9a2.5 2.5 0 0 1 1.8 2.9l-.8 4a3 3 0 0 1-3 2.4H12a5 5 0 0 1-3.9-1.9L5 15.5a1.7 1.7 0 0 1 2.6-2.2l1.9 1.7z"/><path d="M6.5 5.5a4.8 4.8 0 0 1 9.6-.9"/></symbol>
+  <symbol id="i-umbrella" viewBox="0 0 24 24"><path d="M12 2.5A9.5 9.5 0 0 1 21.5 12h-19A9.5 9.5 0 0 1 12 2.5zM12 12v7.5a2 2 0 0 0 4 0M12 2.5V4"/></symbol>
   <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5 4.7 13a4.8 4.8 0 0 1 6.8-6.8l.5.5.5-.5a4.8 4.8 0 0 1 6.8 6.8z"/></symbol>
 </svg>
 
@@ -429,6 +551,7 @@ section[id]{scroll-margin-top:4.5rem}
     <a href="#see">See &amp; Do</a>
     <a href="#eat">Eat &amp; Drink</a>
     <a href="#trips">Day Trips</a>
+    <a href="#beyond">Go Further</a>
     <a href="#tips">Tips</a>
     <a href="#contact">Contact</a>
   </div>
@@ -443,19 +566,41 @@ section[id]{scroll-margin-top:4.5rem}
   </div>
 </div>
 
+<!-- ======================= THE COUPLE ======================= -->
+<section class="couple">
+  <div class="wrap">
+    <p class="kicker">The reason we're all going</p>
+    <h2>Samantha &amp; Matt</h2>
+    <p class="aside">A little preview of the two we'll be celebrating.</p>
+  </div>
+  <div class="polaroids">
+    <figure class="polaroid" style="margin:0"><img src="images/web/couple-3.jpg" width="295" height="640" alt="Samantha and Matt on courthouse steps, Samantha holding a bouquet" loading="lazy"></figure>
+    <figure class="polaroid" style="margin:0"><img src="images/web/couple-2.jpg" width="346" height="640" alt="Samantha and Matt sharing a look on stone steps" loading="lazy"></figure>
+    <figure class="polaroid" style="margin:0"><img src="images/web/couple-5.jpg" width="344" height="640" alt="Samantha and Matt celebrating with arms raised" loading="lazy"></figure>
+    <figure class="polaroid" style="margin:0"><img src="images/web/couple-4.jpg" width="295" height="640" alt="Matt dipping Samantha for a kiss" loading="lazy"></figure>
+    <figure class="polaroid" style="margin:0"><img src="images/web/couple-1.jpg" width="480" height="640" alt="Samantha and Matt posing together on the steps" loading="lazy"></figure>
+  </div>
+</section>
+
 <!-- ======================= WELCOME ======================= -->
 <section class="welcome">
   <div class="wrap">
     <p class="kicker">A note from Paul &amp; family</p>
     <h2 class="section-title">We're so glad you're coming.</h2>
-    <div style="margin-top:1.25rem">
-      <p class="lead">Lisbon has always been special to our family, and we can't wait to share it with the people we love most. A lot of you have asked what to see, where to eat, and how to make the most of the trip &mdash; so I put this together to make it easy.</p>
-      <p>Think of it less as a strict itinerary and more as a cheat sheet: what we're doing as a group, and what's worth your time when you've got a few hours to explore on your own.</p>
-      <p class="signature">With love, Paul &amp; Family</p>
-      <div class="wip-note">
-        <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
-        <span>This page keeps growing &mdash; I'm adding names, places, and details all week. Check back before you fly out.</span>
+    <div class="welcome-grid">
+      <div>
+        <p class="lead">Lisbon has always been special to our family, and we can't wait to share it with the people we love most. A lot of you have asked what to see, where to eat, and how to make the most of the trip &mdash; so I put this together to make it easy.</p>
+        <p style="margin-top:1rem">Think of it less as a strict itinerary and more as a cheat sheet: what we're doing as a group, and what's worth your time when you've got a few hours to explore on your own.</p>
+        <p class="signature">With love, Paul &amp; Family</p>
       </div>
+      <figure class="portrait" style="margin:0 auto">
+        <img src="images/web/paul.jpg" width="720" height="720" alt="Paul, your host" loading="lazy">
+        <figcaption>Paul &mdash; father of the bride,<br>unofficial tour guide</figcaption>
+      </figure>
+    </div>
+    <div class="wip-note">
+      <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+      <span>This page keeps growing &mdash; I'm adding names, places, and details all week. Check back before you fly out.</span>
     </div>
   </div>
 </section>
@@ -493,7 +638,11 @@ section[id]{scroll-margin-top:4.5rem}
         <div>
           <p class="when">Friday, July 17</p>
           <h3>Lisbon touring + welcome party</h3>
-          <p>Daytime is open &mdash; a Sintra or Cascais day trip, or an Alfama wander. In the evening: welcome drinks with the whole crew. Come meet everyone flying in.</p>
+          <p>Daytime is open &mdash; a Sintra or Cascais day trip, or an Alfama wander. In the evening: welcome drinks with the whole crew on a rooftop garden above Alfama, with the river spread out below. Come meet everyone flying in.</p>
+          <a class="venue-link" href="https://www.google.com/maps/search/?api=1&query=SOL+Restaurante+e+Jardim+Largo+das+Portas+do+Sol+Lisbon" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span>Welcome party: SOL Restaurante e Jardim<small>Largo das Portas do Sol &middot; tap for directions &middot; +351 21 885 1299</small></span>
+          </a>
         </div>
       </li>
 
@@ -526,6 +675,10 @@ section[id]{scroll-margin-top:4.5rem}
     <h2 class="section-title">Pestana Palace Lisboa</h2>
     <p class="section-lede">A 19th-century palace hotel in Alto de Santo Amaro, near Bel&eacute;m &mdash; gardens, indoor and outdoor pools, and about 20 minutes from the historic center. The hotel runs a shuttle into town; ask at the front desk.</p>
     <div class="card hotel-card">
+      <div class="hotel-photos">
+        <img src="images/web/pestana-gardens.jpg" width="1000" height="667" alt="The yellow Pestana Palace seen from its gardens" loading="lazy">
+        <img src="images/web/pestana-facade.jpg" width="681" height="1024" alt="Ornate facade detail of the Pestana Palace" loading="lazy">
+      </div>
       <div class="hotel-body">
         <h3>The details</h3>
         <ul class="hotel-facts">
@@ -556,21 +709,22 @@ section[id]{scroll-margin-top:4.5rem}
 
     <h3 class="area-label"><svg class="icon" aria-hidden="true"><use href="#i-tower"/></svg>Bel&eacute;m &mdash; right by our hotel</h3>
     <div class="places">
-      <!-- To add a place: copy one of these <a class="place"> blocks and edit the query, name, and note. -->
-      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Bel%C3%A9m+Tower+Lisbon" target="_blank" rel="noopener">
-        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-tower"/></svg></span>
-        <span><h4>Bel&eacute;m Tower</h4><p>The iconic riverfront fortress &mdash; Lisbon's postcard shot.</p></span>
-        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      <!-- Photo place card: copy a block, swap the img, query, name, note. Photos by Paul get the "Paul's photo" chip. -->
+      <a class="place place-photo" href="https://www.google.com/maps/search/?api=1&query=Bel%C3%A9m+Tower+Lisbon" target="_blank" rel="noopener">
+        <span class="pp-media"><img src="images/web/belem-tower.jpg" width="480" height="640" alt="Belém Tower at golden hour, seen from the shore" loading="lazy"><span class="by-paul">Paul's photo</span></span>
+        <span class="pp-body"><span><h4>Bel&eacute;m Tower</h4><p>The iconic riverfront fortress &mdash; Lisbon's postcard shot.</p></span><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
       </a>
-      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Jer%C3%B3nimos+Monastery+Lisbon" target="_blank" rel="noopener">
-        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-monastery"/></svg></span>
-        <span><h4>Jer&oacute;nimos Monastery</h4><p>Staggering Manueline architecture &mdash; worth the line.</p></span>
-        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      <a class="place place-photo" href="https://www.google.com/maps/search/?api=1&query=Jer%C3%B3nimos+Monastery+Lisbon" target="_blank" rel="noopener">
+        <span class="pp-media"><img src="images/web/jeronimos.jpg" width="480" height="640" alt="The carved stone facade of Jerónimos Monastery against a blue sky" loading="lazy"><span class="by-paul">Paul's photo</span></span>
+        <span class="pp-body"><span><h4>Jer&oacute;nimos Monastery</h4><p>Staggering Manueline architecture &mdash; worth the line.</p></span><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
       </a>
-      <a class="place" href="https://www.google.com/maps/search/?api=1&query=Past%C3%A9is+de+Bel%C3%A9m+Lisbon" target="_blank" rel="noopener">
-        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-tart"/></svg></span>
-        <span><h4>Past&eacute;is de Bel&eacute;m</h4><p>The original custard tart, since 1837. Come hungry.</p></span>
-        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      <a class="place place-photo" href="https://www.google.com/maps/search/?api=1&query=Past%C3%A9is+de+Bel%C3%A9m+Lisbon" target="_blank" rel="noopener">
+        <span class="pp-media"><img src="images/web/pasteis-de-belem.jpg" width="640" height="480" alt="The blue Pastéis de Belém storefront awning, 'desde 1837'" loading="lazy"><span class="by-paul">Paul's photo</span></span>
+        <span class="pp-body"><span><h4>Past&eacute;is de Bel&eacute;m</h4><p>The original custard tart, since 1837. Come hungry.</p></span><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+      </a>
+      <a class="place place-photo" href="https://www.google.com/maps/search/?api=1&query=Padr%C3%A3o+dos+Descobrimentos+Lisbon" target="_blank" rel="noopener">
+        <span class="pp-media"><img src="images/web/padrao-descobrimentos.jpg" width="480" height="640" alt="The Monument of the Discoveries rising over the Tagus waterfront" loading="lazy"><span class="by-paul">Paul's photo</span></span>
+        <span class="pp-body"><span><h4>Padr&atilde;o dos Descobrimentos</h4><p>The Monument of the Discoveries &mdash; a short riverside stroll from the tower.</p></span><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
       </a>
     </div>
 
@@ -617,11 +771,11 @@ section[id]{scroll-margin-top:4.5rem}
         <span><h4>Pastel de nata</h4><p>Get one at Manteigaria and one at Past&eacute;is de Bel&eacute;m &mdash; then argue about which is better.</p></span>
       </div>
       <div class="dish">
-        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-fish"/></svg></span>
-        <span><h4>Bacalhau</h4><p>Portugal claims 100+ ways to cook its beloved salt cod. We won't judge your favorite.</p></span>
+        <img class="dish-photo" src="images/web/bacalhau.jpg" width="480" height="640" alt="A bacalhau dish with olives, from Paul's last trip" loading="lazy">
+        <span><h4>Bacalhau</h4><p>Portugal claims 100+ ways to cook its beloved salt cod. We won't judge your favorite. (Paul's photo &mdash; he ate this one.)</p></span>
       </div>
       <div class="dish">
-        <span class="dish-ico"><svg class="icon" aria-hidden="true"><use href="#i-utensils"/></svg></span>
+        <img class="dish-photo" src="images/web/octopus.jpg" width="480" height="640" alt="Whole grilled octopus in olive oil, from Paul's last trip" loading="lazy">
         <span><h4>Grilled fish &amp; seafood</h4><p>Fresh off the boat, simply grilled. Ramiro is the legend &mdash; book ahead.</p></span>
       </div>
       <div class="dish">
@@ -638,7 +792,7 @@ section[id]{scroll-margin-top:4.5rem}
       </div>
     </div>
     <div class="tip-banner">
-      <svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg>
+      <img class="tip-photo" src="images/web/sardines.jpg" width="480" height="270" alt="A plate of grilled sardines with potatoes and salad" loading="lazy">
       <span><strong>Timing tip:</strong> July is peak sardine season &mdash; follow the smoke to charcoal grills in Alfama's lanes.</span>
     </div>
   </div>
@@ -654,24 +808,99 @@ section[id]{scroll-margin-top:4.5rem}
     <p class="section-lede">Best on Thursday or Friday daytime, before the welcome party. Tap a card for directions.</p>
     <div class="trips">
       <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Sintra+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/sintra.jpg" width="1000" height="628" alt="The red and yellow Pena Palace on its forested hilltop in Sintra" loading="lazy"></span>
         <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-castle"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
         <h4>Sintra</h4>
         <p>Pena Palace, Quinta da Regaleira, the Moorish Castle &mdash; fairytale palaces in misty hills.</p>
         <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~40 min from the hotel</span>
       </a>
       <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Cascais+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/cabo-da-roca.jpg" width="504" height="640" alt="The stone monument at Cabo da Roca, westernmost point of continental Europe" loading="lazy"><span class="by-paul">Paul's photo</span></span>
         <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-waves"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
         <h4>Cascais &amp; Guincho</h4>
         <p>Breezy coastal town plus a wild Atlantic beach. Stop at Cabo da Roca &mdash; the westernmost tip of Europe.</p>
         <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~30 min along the coast</span>
       </a>
       <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Arr%C3%A1bida+Natural+Park+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/setubal.jpg" width="1000" height="657" alt="The painted vaulted ceiling of the Church of São Sebastião in Setúbal" loading="lazy"></span>
         <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
         <h4>Set&uacute;bal &amp; Arr&aacute;bida</h4>
         <p>Pristine turquoise coves, choco frito for lunch, and a ferry across to the Tr&oacute;ia peninsula.</p>
         <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~50 min south</span>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- ======================= EXTENDED TRIPS ======================= -->
+<section id="beyond" style="background:var(--white)">
+  <div class="wrap">
+    <p class="kicker">Beyond the wedding week</p>
+    <h2 class="section-title">Making a real trip of it?</h2>
+    <p class="section-lede">If you're staying on after the wedding, southern Portugal is the classic move. These are multi-day trips &mdash; think two or three nights, not an afternoon &mdash; and they pair perfectly with a rental car and no particular hurry.</p>
+    <div class="ext-intro">
+      <svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>
+      <span><strong>The Algarve</strong> is Portugal's southern coast: golden cliffs, warm water, and fishing towns. It's one easy motorway (A2) almost the whole way down from Lisbon.</span>
+    </div>
+    <div class="ext-grid">
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Vilamoura+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/vilamoura.jpg" width="1000" height="750" alt="A quiet cobbled street in Vilamoura" loading="lazy"></span>
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-waves"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Vilamoura</h4>
+        <p>Resort town built around a huge marina &mdash; golf, beach clubs, and long dinners by the boats.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~2&frac34; hrs from Lisbon</span>
+      </a>
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Lagos+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/lagos.jpg" width="1000" height="667" alt="Golden cliffs and a sandy cove near Lagos" loading="lazy"></span>
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Lagos</h4>
+        <p>The postcard Algarve: golden cliffs, sea caves, and a lively old town. Ponta da Piedade is the showstopper.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~3 hrs from Lisbon</span>
+      </a>
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Albufeira+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/albufeira.jpg" width="1000" height="750" alt="A whitewashed street near the beach in Albufeira" loading="lazy"></span>
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-umbrella"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Albufeira</h4>
+        <p>The liveliest beach town on the coast &mdash; big beaches by day, a buzzing old town at night.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~2&frac12; hrs from Lisbon</span>
+      </a>
+      <a class="trip" href="https://www.google.com/maps/search/?api=1&query=Sagres+Portugal" target="_blank" rel="noopener">
+        <span class="trip-media"><img src="images/web/sagres.jpg" width="1000" height="667" alt="Sheer Atlantic cliffs at Cape St. Vincent near Sagres" loading="lazy"></span>
+        <span class="trip-top"><svg class="icon" aria-hidden="true"><use href="#i-tower"/></svg><svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg></span>
+        <h4>Sagres</h4>
+        <p>The dramatic southwestern tip of Portugal &mdash; a clifftop fortress, huge Atlantic views, end-of-the-world feeling.</p>
+        <span class="dur"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>~3&frac14; hrs from Lisbon</span>
+      </a>
+    </div>
+
+    <h3 class="far-label"><svg class="icon" aria-hidden="true"><use href="#i-go"/></svg>Further afield</h3>
+    <div class="far">
+      <a class="far-card" href="https://www.google.com/maps/search/?api=1&query=Seville+Spain" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg></span>
+        <span><h4>Seville, Spain<span class="badge badge-terra">Adventurous</span></h4>
+        <p>Already in the Algarve? Seville is only about 2 hours further by car across the border (A22 to A-49) &mdash; tapas, the Alc&aacute;zar, and flamenco make a great two-day detour.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+      <a class="far-card" href="https://www.google.com/maps/search/?api=1&query=Tangier+Morocco" target="_blank" rel="noopener">
+        <span class="place-ico"><svg class="icon" aria-hidden="true"><use href="#i-waves"/></svg></span>
+        <span><h4>Tangier, Morocco<span class="badge badge-terra">The big one</span></h4>
+        <p>The most ambitious add-on, for anyone making a real journey of it: drive on to Tarifa, Spain (about 4 hours past the Algarve), then it's a ~1-hour fast ferry across the strait to Tangier. Another continent before lunch &mdash; bring your passport and book the ferry ahead.</p></span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-go"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PAUL'S SNAPSHOTS ======================= -->
+<section class="snaps">
+  <p class="kicker" style="justify-content:center">Trips past</p>
+  <h2>From Paul's albums</h2>
+  <p class="aside">A few snapshots from his Portugal trips &mdash; your week can look like this.</p>
+  <div class="snap-row">
+    <figure class="snap" style="margin:0"><img src="images/web/snap-nazare-boat.jpg" width="640" height="480" alt="A traditional painted fishing boat on the sand at Nazaré" loading="lazy"><figcaption>Fishing boats at Nazar&eacute;</figcaption></figure>
+    <figure class="snap" style="margin:0"><img src="images/web/snap-nazare-beach.jpg" width="640" height="480" alt="The long curve of Nazaré beach seen from the clifftop" loading="lazy"><figcaption>Nazar&eacute; from the S&iacute;tio clifftop</figcaption></figure>
+    <figure class="snap" style="margin:0"><img src="images/web/snap-obidos.jpg" width="640" height="480" alt="The castle walls and a medieval market in Óbidos" loading="lazy"><figcaption>Market day in &Oacute;bidos</figcaption></figure>
+    <figure class="snap" style="margin:0"><img src="images/web/snap-rua-augusta.jpg" width="480" height="640" alt="The Rua Augusta Arch on Praça do Comércio in Lisbon" loading="lazy"><figcaption>Rua Augusta Arch, downtown Lisbon</figcaption></figure>
   </div>
 </section>
 
@@ -754,6 +983,20 @@ section[id]{scroll-margin-top:4.5rem}
   <blockquote>&ldquo;Enjoy the food. Enjoy the beauty. Enjoy the people. Most of all &mdash; enjoy celebrating with us.&rdquo;</blockquote>
   <span class="signature">With love, Paul &amp; Family</span>
   <p class="footer-fine">Samantha &amp; Matt &middot; Lisbon &middot; July 18, 2026</p>
+
+  <details class="credits">
+    <summary>Photo credits</summary>
+    <p>Most photos here are Paul's own, and the courthouse sneak peek is all Sam &amp; Matt. The rest come from Wikimedia Commons under Creative Commons licenses:
+    Pena Palace (Sintra) and Igreja de S&atilde;o Sebasti&atilde;o (Set&uacute;bal) by <a href="https://commons.wikimedia.org/wiki/File:Palacio_Nacional_da_Pena,_Sintra,_Portugal,_2019-05-25,_DD_76.jpg" target="_blank" rel="noopener">Diego Delso</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>);
+    grilled sardines by <a href="https://commons.wikimedia.org/wiki/File:Sardinhas_assadas.jpg" target="_blank" rel="noopener">Duarte Briz</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>);
+    Vilamoura by <a href="https://commons.wikimedia.org/wiki/File:Flickr_-_ronsaunders47_-_Quiet_street_1._VILAMOURA_ALGARVE_PORTUGAL..jpg" target="_blank" rel="noopener">Ronald Saunders</a> (<a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>);
+    Lagos by <a href="https://commons.wikimedia.org/wiki/File:Lagos_Algarve_Strand_(27099741824).jpg" target="_blank" rel="noopener">dronepicr</a> (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>);
+    Albufeira by <a href="https://commons.wikimedia.org/wiki/File:2018-03-02_Inatel_Praia_Hotel,_Albufeira_(1).JPG" target="_blank" rel="noopener">Kolforn</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>);
+    Sagres by <a href="https://commons.wikimedia.org/wiki/File:Cape_Saint-Vincent,_Sagres,_Vila_do_Bispo,_Portugal_(Unsplash).jpg" target="_blank" rel="noopener">Pablo Orcaray</a> (CC0);
+    Pestana Palace gardens by <a href="https://commons.wikimedia.org/wiki/File:Pestana_Palace_Lisbon.jpg" target="_blank" rel="noopener">UggBoy&hearts;UggGirl</a> (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>);
+    Pestana Palace facade by <a href="https://commons.wikimedia.org/wiki/File:Hotel_Pestana_Palace_(17852304).jpg" target="_blank" rel="noopener">chicadelatele</a> (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>).
+    Images were resized and compressed for the web.</p>
+  </details>
 </footer>
 
 <script>

@@ -21,3 +21,11 @@ cascais.jpg | File:Faro de Santa Marta, Cascais, Portugal, 2022-07-25, DD 13-15 
 setubal.jpg | File:Iglesia de San Sebastián, Setúbal, Portugal, 2021-09-10, DD 28-30 HDR.jpg | License: CC BY-SA 4.0 | Artist: Diego Delso | Source: https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Sebasti%C3%A1n,_Set%C3%BAbal,_Portugal,_2021-09-10,_DD_28-30_HDR.jpg
 sagres.jpg | File:Cape Saint-Vincent, Sagres, Vila do Bispo, Portugal (Unsplash).jpg | License: CC0 | Artist: Pablo Orcaray (pborcaray) | Source: https://commons.wikimedia.org/wiki/File:Cape_Saint-Vincent,_Sagres,_Vila_do_Bispo,_Portugal_(Unsplash).jpg
 sardines.jpg | File:Sardinhas assadas.jpg | License: CC BY-SA 4.0 | Artist: Duarte Briz | Source: https://commons.wikimedia.org/wiki/File:Sardinhas_assadas.jpg
+
+CORRECTION 2026-07-08 (Fable): pestana-palace-1.jpg / pestana-palace-2.jpg were removed — they showed a
+different (mint-green) palace from Vitor Oliveira's archive, NOT the Pestana Palace (Palácio Vale Flor),
+which is yellow. Replaced with verified photos of the actual hotel, served from images/web/:
+pestana-gardens.jpg | File:Pestana Palace Lisbon.jpg | License: CC BY 2.0 | Artist: UggBoy♥UggGirl (Flickr) | Source: https://commons.wikimedia.org/wiki/File:Pestana_Palace_Lisbon.jpg
+pestana-facade.jpg | File:Hotel Pestana Palace (17852304).jpg | License: CC BY 2.0 | Artist: chicadelatele (Flickr) | Source: https://commons.wikimedia.org/wiki/File:Hotel_Pestana_Palace_(17852304).jpg
+Note: cascais.jpg and seafood.jpg are staged but currently unused on the page (Paul's own photos cover
+those spots), so they are not credited in the page footer. If used later, add credits from this file.
